@@ -1,0 +1,26 @@
+{
+  "name": "enriquegonzalez.github.io",
+  "version": "0.0.1",
+  "homepage": "https://github.com/enriquegonzalez/enriquegonzalez.github.io",
+  "authors": [
+    "Enrique <egonzalez78@gmail.com>"
+  ],
+  "description": "Enrique Gonzalez, Interaction Designer",
+  "main": "index.html",
+  "keywords": [
+    "Interaction",
+    "Design"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "5.5.0"
+  }
+}
