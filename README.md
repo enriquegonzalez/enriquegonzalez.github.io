@@ -1,2 +1,1 @@
-# enriquegonzalez.github.io
-My Portfolio
+# Enrique Gonzalez, Interaction Designer
