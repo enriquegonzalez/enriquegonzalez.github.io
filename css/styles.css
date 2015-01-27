@@ -16,11 +16,11 @@ body {
 
 .list {
   list-style: none;
+  margin-left: 0;
 }
 
 .list__item {
   padding: 1rem 0;
-  text-align: center;
 }
 
   .list__item__title {
@@ -50,11 +50,11 @@ body {
 .portfolio {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
   padding: 4.25rem 3rem 3rem 3rem;
+  text-align: center;
 }
 
   .portfolio__header {
     margin: 0;
-    text-align: center;
   }
 
   .portfolio__title {
