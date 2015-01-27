@@ -146,7 +146,7 @@
     }
 
   .portfolio {
-    padding: 1.25rem 1rem 1rem 1rem;
+    padding: 1.25rem 0 0 0;
   }
     .portfolio__header {
       margin: 0;
