@@ -107,7 +107,7 @@
   }
 
 .copyright {
-  font-weight: 600;
+  font-size: .85rem;
   padding: 3rem;
   margin-bottom: 5rem;
 }
@@ -115,4 +115,8 @@
 
 .italic {
   font-style:  italic;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
