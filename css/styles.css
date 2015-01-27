@@ -22,6 +22,7 @@
 
   .page__title {
     font-family: 'Abril Fatface', cursive;
+    font-weight: 300;
     text-transform: capitalize;
   }
 
