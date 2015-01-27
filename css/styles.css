@@ -156,6 +156,10 @@
       font-size: 1rem;
     }
 
+    .portfolio__item {
+      padding: .25rem 0;
+    }
+
     .portfolio__item__title {
       font-size: 1rem;
     }
