@@ -14,16 +14,16 @@ body {
   text-transform: uppercase;
 }
 
-.list {
+.items {
   list-style: none;
   margin-left: 0;
 }
 
-.list__item {
-  padding: 1rem 0;
+.item {
+  padding: .65rem 0;
 }
 
-  .list__item__title {
+  .item__title {
     text-transform: capitalize;
   }
 
@@ -54,15 +54,27 @@ body {
 }
 
   .portfolio__header {
-    margin: 0;
+    margin: 0 0 3rem 0;
   }
 
   .portfolio__title {
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: .65rem;
+    font-size: 1.65rem;
+    font-weight: 600;
+    letter-spacing: .385rem;
   }
 
-  .list__item__title--portfolio {
+  .portfolio__item__title {
     font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .portfolio__item__link {
+    color: hsla(0, 0%, 0%, 1);
+  }
+
+  .portfolio__item__description {
+    font-size: 1.65rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.5;
   }
