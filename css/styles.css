@@ -132,7 +132,7 @@
 
   .page__header {
     border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
-    padding: 1rem;
+    padding: 0;
   }
 
   .page__title {
@@ -141,7 +141,7 @@
   }
 
   .page__value-statement {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     line-height: 1.5;
   }
 
