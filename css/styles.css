@@ -2,7 +2,8 @@
 /*black: hsla(0, 0%, 0%, 1);*/
 
 /* BASE */
-body {
+
+.page {
   padding: 3rem;
   min-height: 100%;
 }
@@ -14,38 +15,34 @@ body {
   text-transform: uppercase;
 }
 
+  .page__header {
+    border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
+    padding: 3rem;
+  }
+
+  .page__title {
+    text-transform: capitalize;
+  }
+
+  .page__value-statement {
+    color: hsla(0, 0%, 0%, .65);
+    font-size: 1.65rem;
+    line-height: 1.65;
+  }
+
+
 .items {
   list-style: none;
   margin-left: 0;
 }
 
-.item {
-  padding: .65rem;
-}
-
-  .item__title {
-    text-transform: capitalize;
+  .item {
+    padding: .65rem;
   }
 
-.italic {
-  font-style:  italic;
-}
-
-
-.page__header {
-  border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
-  padding: 3rem;
-}
-
-.page__value-statement {
-  color: hsla(0, 0%, 0%, .65);
-  font-size: 1.65rem;
-  line-height: 1.65;
-}
-
-.page__title {
-  text-transform: capitalize;
-}
+    .item__title {
+      text-transform: capitalize;
+    }
 
 .portfolio {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
@@ -79,3 +76,7 @@ body {
     font-weight: 300;
     line-height: 1.5;
   }
+
+.italic {
+  font-style:  italic;
+}
