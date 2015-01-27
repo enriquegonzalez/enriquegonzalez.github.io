@@ -135,6 +135,16 @@
     padding: 1rem;
   }
 
+  .page__title {
+    font-size: 1.65rem;
+    text-transform: capitalize;
+  }
+
+  .page__value-statement {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 // Medium screens
