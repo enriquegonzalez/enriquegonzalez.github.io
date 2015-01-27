@@ -77,6 +77,37 @@
     line-height: 1.5;
   }
 
+.footer {
+
+}
+
+.social-media {
+  padding: 4.25rem 3rem 3rem 3rem;
+  text-align: center;
+}
+
+  .social-media__header {
+    margin: 0 0 2rem 0;
+  }
+
+  .social-media__title {
+    display: none;
+    font-size: 1.65rem;
+    font-weight: 600;
+    letter-spacing: .385rem;
+  }
+
+  .social-media__item {
+    border-radius: 5rem;
+    display: inline-block;
+    height: 8rem;
+    margin: 0 1rem 0 1rem;
+    padding: 3rem 1rem;
+    text-align: center;
+    width: 8rem;
+  }
+
+
 .italic {
   font-style:  italic;
 }
