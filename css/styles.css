@@ -126,24 +126,39 @@
 
 @media only screen and (max-width: 40em) {
 
-.page {
-  padding: 1rem;
-}
-
-  .page__header {
-    border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
-    padding: 0;
+  .page {
+    padding: 1rem;
   }
 
-  .page__title {
-    font-size: 1.5rem;
-    text-transform: capitalize;
-  }
+    .page__header {
+      border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
+      padding: 0;
+    }
 
-  .page__value-statement {
-    font-size: 1rem;
-    line-height: 1.5;
+    .page__title {
+      font-size: 1.5rem;
+      text-transform: capitalize;
+    }
+
+    .page__value-statement {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+  .portfolio {
+    padding: 1.25rem 1rem 1rem 1rem;
   }
+    .portfolio__header {
+      margin: 0;
+    }
+
+    .portfolio__title {
+      font-size: 1rem;
+    }
+
+    .portfolio__item__title {
+      font-size: 1.25rem;
+    }
 
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
