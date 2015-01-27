@@ -53,14 +53,13 @@ body {
 }
 
   .portfolio__header {
-    letter-spacing: .65rem;
-    margin-bottom: 2rem;
     text-align: center;
   }
 
   .portfolio__title {
     font-size: 2rem;
     font-weight: 400;
+    letter-spacing: .65rem;
   }
 
   .list__item__title--portfolio {
