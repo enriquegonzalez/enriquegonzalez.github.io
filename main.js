@@ -43,5 +43,5 @@ requirejs.config({
 });
 
 require(['jquery', 'foundation'], function($) {
-  $(document).foundation();
+    $(document).foundation();
 });
