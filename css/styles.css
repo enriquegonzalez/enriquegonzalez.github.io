@@ -21,6 +21,7 @@
   }
 
   .page__title {
+    font-family: 'Abril Fatface', cursive;
     text-transform: capitalize;
   }
 
@@ -41,6 +42,7 @@
   }
 
     .item__title {
+      font-family: 'Abril Fatface', cursive;
       text-transform: capitalize;
     }
 
