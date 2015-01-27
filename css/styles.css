@@ -53,6 +53,7 @@ body {
 }
 
   .portfolio__header {
+    margin: 0;
     text-align: center;
   }
 
