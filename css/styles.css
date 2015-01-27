@@ -8,9 +8,24 @@ body {
 }
 
 .title {
+  font-weight: 600;
+  line-height: 1.5;
   margin-bottom: 0;
   text-transform: uppercase;
 }
+
+.list {
+  list-style: none;
+}
+
+.list__item {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+  .list__item__title {
+    text-transform: capitalize;
+  }
 
 .italic {
   font-style:  italic;
@@ -18,18 +33,36 @@ body {
 
 
 .page__header {
-  /*border: 2px solid red;*/
   border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
   padding: 3rem;
-  margin-bottom: 3rem;
 }
 
 .page__value-statement {
   color: hsla(0, 0%, 0%, .65);
   font-size: 1.65rem;
-  line-height: 1.5;
+  line-height: 1.65;
 }
 
 .page__title {
   text-transform: capitalize;
 }
+
+.portfolio {
+  border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
+  padding: 4.25rem 3rem 3rem 3rem;
+}
+
+  .portfolio__header {
+    letter-spacing: .65rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .portfolio__title {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .list__item__title--portfolio {
+    font-size: 2rem;
+  }
