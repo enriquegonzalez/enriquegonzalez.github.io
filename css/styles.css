@@ -1,0 +1,35 @@
+/* COLOR */
+/*black: hsla(0, 0%, 0%, 1);*/
+
+/* BASE */
+body {
+  padding: 3rem;
+  min-height: 100%;
+}
+
+.title {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style:  italic;
+}
+
+
+.page__header {
+  /*border: 2px solid red;*/
+  border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
+
+.page__value-statement {
+  color: hsla(0, 0%, 0%, .65);
+  font-size: 1.65rem;
+  line-height: 1.5;
+}
+
+.page__title {
+  text-transform: capitalize;
+}
