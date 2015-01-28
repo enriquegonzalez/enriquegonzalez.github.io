@@ -1,8 +1,19 @@
 /* COLOR */
 /*black: hsla(0, 0%, 0%, 1);*/
 
+html, body {
+  height: initial;
+}
+
 .page {
+  background: url('../images/enrique-gonzalez.jpg') no-repeat center center fixed;
+  background-size: cover;
   padding: 3rem;
+
+}
+
+.page__contents {
+  background: hsla(360, 100%, 100%, .85);
 }
 
 .title {
