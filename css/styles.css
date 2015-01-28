@@ -3,7 +3,6 @@
 
 .page {
   padding: 3rem;
-  min-height: 100%;
 }
 
 .title {
@@ -132,6 +131,7 @@
 
   .page {
     padding: 1rem;
+    margin-top: 1rem;
   }
 
     .page__header {
@@ -172,6 +172,9 @@
       font-size: 1rem;
     }
 
+.footer {
+  margin-bottom: 2rem;
+}
   .social-media {
     padding: 1.25rem 0 0 0;
   }
@@ -186,7 +189,7 @@
   .copyright {
     font-size: .65rem;
     padding: 0;
-    margin: 1rem 0 5rem 0;
+    margin: 1rem 0 0 0;
   }
 
   .line-break {
