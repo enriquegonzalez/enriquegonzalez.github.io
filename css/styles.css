@@ -8,6 +8,7 @@
 .title {
   font-weight: 600;
   line-height: 1.5;
+  letter-spacing: .065rem;
   margin-bottom: 0;
   text-transform: uppercase;
 }
