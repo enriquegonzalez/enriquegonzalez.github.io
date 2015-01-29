@@ -202,6 +202,27 @@ html, body {
       font-size: .85rem;
     }
 
+  .social-media {
+    padding: 1.25rem 0 0 0;
+  }
+    .social-media__item {
+      border-radius: 2rem;
+      height: 1rem;
+      margin: 0 0 1rem 0;
+      padding: 0;
+      width: 1rem;
+    }
+
+  .copyright {
+    font-size: .65rem;
+    padding: 0;
+    margin: 1rem 0 0 0;
+  }
+
+  .line-break {
+    display: block;
+  }
+
 } /* Define mobile styles for tiny androids */
 
 @media only screen and (min-width: 241px) and (max-width: 40em) {
