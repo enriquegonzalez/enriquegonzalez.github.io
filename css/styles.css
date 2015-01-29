@@ -29,10 +29,20 @@ html, body {
     padding: 3rem;
   }
 
-  .page__title {
-    font-family: 'Abril Fatface', cursive;
-    font-weight: 300;
-    text-transform: capitalize;
+    .page__title {
+      font-family: 'Abril Fatface', cursive;
+      font-weight: 300;
+      text-transform: capitalize;
+      /*margin-bottom: 1rem;*/
+    }
+
+  .page__title:first-letter {
+    float: left;
+    font-size: 7rem;
+    line-height: 4rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: 1.33rem;
   }
 
   .page__value-statement {
@@ -40,7 +50,6 @@ html, body {
     font-size: 1.65rem;
     line-height: 1.65;
   }
-
 
 .items {
   list-style: none;
@@ -136,6 +145,7 @@ html, body {
   text-transform: lowercase;
 }
 
+
 // Small screens
 @media only screen { } /* Define mobile styles */
 
@@ -156,6 +166,13 @@ html, body {
       margin-top: 1rem;
       text-transform: capitalize;
     }
+      .page__title:first-letter {
+        font-size: 4rem;
+        line-height: 3.65rem;
+        padding-left: .25rem;
+        padding-right: .25rem;
+        padding-top: 0rem;
+      }
 
     .page__value-statement {
       font-size: 1rem;
