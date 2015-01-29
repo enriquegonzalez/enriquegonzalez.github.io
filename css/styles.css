@@ -149,8 +149,9 @@ html, body {
 // Small screens
 @media only screen { } /* Define mobile styles */
 
-@media only screen and (max-width: 240px){
+@media only screen and (max-width: 241px){
   .page__title {
+    color: red;
       font-size: 1rem;
       margin-top: 1rem;
       text-transform: capitalize;
