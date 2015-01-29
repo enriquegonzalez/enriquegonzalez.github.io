@@ -167,11 +167,11 @@ html, body {
       text-transform: capitalize;
     }
       .page__title:first-letter {
-        font-size: 4rem;
+        font-size: 4.085rem;
         line-height: 3.65rem;
         padding-left: .25rem;
         padding-right: .25rem;
-        padding-top: .085rem;
+        padding-top: 0;
       }
 
     .page__value-statement {
