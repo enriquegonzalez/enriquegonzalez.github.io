@@ -162,14 +162,14 @@ html, body {
     }
 
   .page__title {
-    color: purple;
+    color: orange;
       font-size: 1rem;
       margin-top: 1rem;
     }
 
     .page__title:first-letter {
         font-size: 1rem;
-        line-height: initial;
+        line-height: inherit;
         padding-left: 0;
         padding-right: 0;
       }
