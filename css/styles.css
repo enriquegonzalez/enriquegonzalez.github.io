@@ -151,15 +151,14 @@ html, body {
 
 @media only screen and (max-width: 240px){
   .page__title {
-    color: red;
+    color: green;
       font-size: 1rem;
       margin-top: 1rem;
-      text-transform: capitalize;
     }
 
     .page__title:first-letter {
         font-size: 1rem;
-        line-height: inherit;
+        line-height: 1.5;
         padding-left: 0;
         padding-right: 0;
       }
