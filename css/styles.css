@@ -152,7 +152,7 @@ html, body {
 @media only screen and (max-width: 240px){
 
   .page {
-    padding: .65rem;
+    padding: 1rem;
     margin-top: .65rem;
   }
   .page__title {
