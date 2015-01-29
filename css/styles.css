@@ -155,6 +155,12 @@ html, body {
     padding: 1rem;
     margin-top: .65rem;
   }
+
+  .page__header {
+      border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
+      padding: 0;
+    }
+
   .page__title {
     color: green;
       font-size: 1rem;
