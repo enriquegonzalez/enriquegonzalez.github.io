@@ -152,21 +152,26 @@ html, body {
 @media only screen and (max-width: 240px){
 
   .page {
-    padding: .25rem;
-    margin-top: .25rem;
+    padding: .65rem;
+    margin-top: .65rem;
   }
   .page__title {
     color: green;
-      font-size: .65rem;
-      margin-top: .65rem;
+      font-size: 1rem;
+      margin-top: 1rem;
     }
 
     .page__title:first-letter {
-        font-size: .65rem;
+        font-size: 1rem;
         line-height: 0;
         padding-left: 0;
         padding-right: 0;
       }
+
+    .page__value-statement {
+      font-size: .9rem;
+      line-height: 1;
+    }
 
 } /* Define mobile styles for tiny androids */
 
