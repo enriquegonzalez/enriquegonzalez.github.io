@@ -169,7 +169,7 @@ html, body {
 
     .page__title:first-letter {
         font-size: 1rem;
-        line-height: inherit;
+        line-height: -1rem;
         padding-left: 0;
         padding-right: 0;
       }
