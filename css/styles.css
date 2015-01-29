@@ -150,6 +150,11 @@ html, body {
 @media only screen { } /* Define mobile styles */
 
 @media only screen and (max-width: 240px){
+
+  .page {
+    padding: .65rem;
+    margin-top: .65rem;
+  }
   .page__title {
     color: green;
       font-size: 1rem;
