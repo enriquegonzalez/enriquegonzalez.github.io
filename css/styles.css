@@ -152,18 +152,18 @@ html, body {
 @media only screen and (max-width: 240px){
 
   .page {
-    padding: .65rem;
-    margin-top: .65rem;
+    padding: .25rem;
+    margin-top: .25rem;
   }
   .page__title {
     color: green;
-      font-size: 1rem;
-      margin-top: 1rem;
+      font-size: .65rem;
+      margin-top: .65rem;
     }
 
     .page__title:first-letter {
-        font-size: 1rem;
-        line-height: 1.5;
+        font-size: .65rem;
+        line-height: 0;
         padding-left: 0;
         padding-right: 0;
       }
