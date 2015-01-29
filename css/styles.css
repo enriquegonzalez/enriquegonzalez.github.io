@@ -152,7 +152,7 @@ html, body {
 @media only screen and (max-width: 240px){
 
   .page {
-    padding: 1rem;
+    padding: .65rem;
     margin-top: .65rem;
   }
 
@@ -162,14 +162,14 @@ html, body {
     }
 
   .page__title {
-    color: green;
+    color: purple;
       font-size: 1rem;
       margin-top: 1rem;
     }
 
     .page__title:first-letter {
         font-size: 1rem;
-        line-height: 0;
+        line-height: 1rem;
         padding-left: 0;
         padding-right: 0;
       }
