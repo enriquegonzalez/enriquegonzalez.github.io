@@ -146,8 +146,8 @@ html, body {
 @media only screen and (max-width: 240px){
 
   .page {
-    padding: .65rem;
-    margin-top: .65rem;
+    padding: .25rem;
+    margin-top: .25rem;
   }
 
   .page__header {
