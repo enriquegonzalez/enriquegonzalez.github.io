@@ -6,15 +6,10 @@ html, body {
 }
 
 .page {
-/*  background: url('../images/enrique-gonzalez.jpg') no-repeat center center fixed;
-  background-size: cover;*/
   padding: 3rem;
 
 }
 
-.page__contents {
-  /*background: hsla(360, 100%, 100%, .97);*/
-}
 
 .title {
   font-weight: 600;
@@ -33,7 +28,6 @@ html, body {
       font-family: 'Abril Fatface', cursive;
       font-weight: 300;
       text-transform: capitalize;
-      /*margin-bottom: 1rem;*/
     }
 
   .page__title:first-letter {
@@ -239,6 +233,7 @@ html, body {
 
     .page__title {
       font-size: 1.25rem;
+      letter-spacing: .025rem;
       margin-top: 1rem;
       text-transform: capitalize;
     }
