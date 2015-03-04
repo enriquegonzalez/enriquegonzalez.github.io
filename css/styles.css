@@ -255,11 +255,11 @@ img {
   }
 
   .portfolio__tab__link {
-    color: green;
+    color: red;
     font-size: .35rem;
     letter-spacing:  .065rem;
-    padding: .1rem;
-    width: 4.5rem;
+    padding: 0;
+    width: 4rem;
   }
 
     .portfolio__title {
