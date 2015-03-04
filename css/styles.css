@@ -277,6 +277,10 @@ img {
       font-size: .8rem;
     }
 
+    .portfolio__item__note {
+      font-size: .45rem;
+    }
+
   .social-media {
     padding: 1.25rem 0 0 0;
   }
@@ -369,6 +373,10 @@ img {
     .portfolio__item__caption {
       font-size: 1rem;
       margin: 1rem 0;
+    }
+
+    .portfolio__item__note {
+      font-size: .65rem;
     }
 
 .footer {
