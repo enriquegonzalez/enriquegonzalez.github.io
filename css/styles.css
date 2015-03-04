@@ -277,6 +277,11 @@ img {
       font-size: .8rem;
     }
 
+    .portfolio__item__caption {
+      font-size: .65rem;
+      margin: 1rem 0;
+    }
+
     .portfolio__item__note {
       font-size: .45rem;
     }
