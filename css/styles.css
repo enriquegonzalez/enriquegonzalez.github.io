@@ -255,6 +255,7 @@ img {
   }
 
   .portfolio__tab__link {
+    color: green;
     font-size: .35rem;
     letter-spacing:  .065rem;
     padding: .1rem;
