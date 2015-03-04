@@ -249,6 +249,18 @@ img {
       margin: 0 0 .25rem 0;
     }
 
+  .portfolio__tab {
+    display: inline-block;
+    margin: .65rem;
+  }
+
+  .portfolio__tab__link {
+    font-size: .75rem;
+    letter-spacing:  .085rem;
+    padding: .25rem;
+    width: 5.5rem;
+  }
+
     .portfolio__title {
       font-size: .85rem;
     }
