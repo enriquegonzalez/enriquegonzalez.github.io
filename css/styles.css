@@ -344,7 +344,7 @@ img {
 
   .portfolio__tab {
     display: inline-block;
-    margin: .65rem 0;
+    margin: .65rem .25rem;
   }
 
   .portfolio__tab__link {
