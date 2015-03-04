@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="enrique">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,61 +47,162 @@
 
     <div class="row">
       <div class="large-12 large-centered columns">
-        <section class="portfolio">
+        <section class="portfolio" ng-controller="TabController as tabCtrl">
           <header class="portfolio__header">
             <h1 class="title portfolio__title">Portfolio</h1>
           </header>
-          <ul class="items portfolio__items">
-            <li class="item portfolio__item">
-              <h2 class="title item__title portfolio__item__title">
-                <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/getting-smart-on-interaction-design-f525c2ca1078">Getting Smart <span class="line-break"><span class="lowercase">on</span> Interaction Design</span></a>
-              </h2>
-              <p class="portfolio__item__description">A brief essay on understanding and communicating interaction design.</p>
+
+          <ul class="portfolio__tabs">
+            <li class="portfolio__tab">
+              <a class="portfolio__tab__link" ng-class="{'portfolio__tab__link--active' : tabCtrl.isSet(1)}" ng-click="tabCtrl.setTab(1)">
+                Articles
+              </a>
             </li>
-            <li class="item portfolio__item">
-              <h2 class="title item__title portfolio__item__title">
-                <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/gravitytanks-internal-reviews-reimagined-7d2bce5de093"><span class="lowercase">gravitytank’s</span> <span class="line-break">Internal Reviews Reimagined</span></a>
-              </h2>
-              <p class="portfolio__item__description">Applying radical innovation to create a human-centered application.</p>
+            <li class="portfolio__tab">
+              <a class="portfolio__tab__link" ng-class="{'portfolio__tab__link--active' : tabCtrl.isSet(2)}" ng-click="tabCtrl.setTab(2)">
+                Websites
+              </a>
             </li>
-            <li class="item portfolio__item">
-              <h2 class="title item__title portfolio__item__title">
-                <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/what-middle-schoolers-taught-me-about-prototyping-79fc83871e8b">Prototyping <span class="line-break"><span class="lowercase">with</span> Middle Schoolers</span></a>
-              </h2>
-              <p class="portfolio__item__description">Revealing the benefits of <span class="line-break">contextual inquiry.</span></p>
+            <li class="portfolio__tab">
+              <a class="portfolio__tab__link" ng-class="{'portfolio__tab__link--active' : tabCtrl.isSet(3)}" ng-click="tabCtrl.setTab(3)">
+                Web Apps
+              </a>
             </li>
-            <li class="item portfolio__item">
-              <h2 class="title item__title portfolio__item__title">
-                <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/notebooks-164430ac5ce6">Storytelling <span class="line-break"><span class="lowercase">with</span> simple objects</span></a>
-              </h2>
-              <p class="portfolio__item__description">Telling the story of everyday things.</p>
-            </li>
-            <li class="item portfolio__item">
-              <h2 class="title item__title portfolio__item__title">
-                <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/i-accidentally-built-the-greatest-user-interface-106946b1115e">I Accidentally Built <span class="line-break"><span class="lowercase">the</span> Greatest User Interface</span></a>
-              </h2>
-              <p class="portfolio__item__description">A story about reframing <span class="line-break">and product design.</span></p>
-            </li>
-            <!-- <li class="item portfolio__item">
-              <h2 class="title item__title portfolio__item__title">
-                <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/reflection-gratitude-and-focus-with-notetato-2e4ed9018a2">Reflection, <span class="line-break">Gratitude, <span class="lowercase">and</span> Focus</span></a>
-              </h2>
-              <p class="portfolio__item__description">It's easy to get overwhelmed and forget about the things that matter. That's why I created Notetato, a simple way to reset.</p>
-            </li> -->
-            <!--<li class="item portfolio__item">
-              <h2 class="title item__title portfolio__item__title">
-                <a class="portfolio__item__link" href="http://google.com">Interactive Storytelling</a>
-              </h2>
-              <p class="portfolio__item__description">Creating a digital Museum experience (NOTE: All about context e.g. physical space and environment sounds, visuals, guidance etc).</p>
-            </li>
-            <li class="item portfolio__item">
-              <h2 class="title item__title portfolio__item__title">
-                <a class="portfolio__item__link" href="http://google.com">Video Booth Lessons</a>
-              </h2>
-              <p class="portfolio__item__description">The Do's and Don'ts of Museum Exhibition Video Booths.</p>
-            </li>-->
           </ul>
-        </section>
+            <div class="portfolio__tab__content" ng-show="tabCtrl.isSet(1)">
+              <ul class="items portfolio__items">
+                <li class="item portfolio__item">
+                  <h2 class="title item__title portfolio__item__title">
+                    <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/getting-smart-on-interaction-design-f525c2ca1078">Getting Smart <span class="line-break"><span class="lowercase">on</span> Interaction Design</span></a>
+                  </h2>
+                  <p class="portfolio__item__description">A brief essay on understanding and communicating interaction design.</p>
+                </li>
+                <li class="item portfolio__item">
+                  <h2 class="title item__title portfolio__item__title">
+                    <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/gravitytanks-internal-reviews-reimagined-7d2bce5de093"><span class="lowercase">gravitytank’s</span> <span class="line-break">Internal Reviews Reimagined</span></a>
+                  </h2>
+                  <p class="portfolio__item__description">Applying radical innovation to create a human-centered application.</p>
+                </li>
+                <li class="item portfolio__item">
+                  <h2 class="title item__title portfolio__item__title">
+                    <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/what-middle-schoolers-taught-me-about-prototyping-79fc83871e8b">Prototyping <span class="line-break"><span class="lowercase">with</span> Middle Schoolers</span></a>
+                  </h2>
+                  <p class="portfolio__item__description">Revealing the benefits of <span class="line-break">contextual inquiry.</span></p>
+                </li>
+                <li class="item portfolio__item">
+                  <h2 class="title item__title portfolio__item__title">
+                    <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/notebooks-164430ac5ce6">Storytelling <span class="line-break"><span class="lowercase">with</span> simple objects</span></a>
+                  </h2>
+                  <p class="portfolio__item__description">Telling the story of everyday things.</p>
+                </li>
+                <li class="item portfolio__item">
+                  <h2 class="title item__title portfolio__item__title">
+                    <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/i-accidentally-built-the-greatest-user-interface-106946b1115e">I Accidentally Built <span class="line-break"><span class="lowercase">the</span> Greatest User Interface</span></a>
+                  </h2>
+                  <p class="portfolio__item__description">A story about reframing <span class="line-break">and product design.</span></p>
+                </li>
+                <!-- <li class="item portfolio__item">
+                  <h2 class="title item__title portfolio__item__title">
+                    <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/reflection-gratitude-and-focus-with-notetato-2e4ed9018a2">Reflection, <span class="line-break">Gratitude, <span class="lowercase">and</span> Focus</span></a>
+                  </h2>
+                  <p class="portfolio__item__description">It's easy to get overwhelmed and forget about the things that matter. That's why I created Notetato, a simple way to reset.</p>
+                </li> -->
+                <!--<li class="item portfolio__item">
+                  <h2 class="title item__title portfolio__item__title">
+                    <a class="portfolio__item__link" href="http://google.com">Interactive Storytelling</a>
+                  </h2>
+                  <p class="portfolio__item__description">Creating a digital Museum experience (NOTE: All about context e.g. physical space and environment sounds, visuals, guidance etc).</p>
+                </li>
+                <li class="item portfolio__item">
+                  <h2 class="title item__title portfolio__item__title">
+                    <a class="portfolio__item__link" href="http://google.com">Video Booth Lessons</a>
+                  </h2>
+                  <p class="portfolio__item__description">The Do's and Don'ts of Museum Exhibition Video Booths.</p>
+                </li>-->
+              </ul>
+            </div>
+            <div class="portfolio__tab__content" ng-show="tabCtrl.isSet(2)">
+              <ul class="items portfolio__items">
+                <li class="item portfolio__item portfolio__item--web clearfix">
+                  <figure class="portfolio__item__image">
+                    <div class="image__container">
+                      <a href="http://roberthoudewines.com">
+                        <img src="images/work/robert-houde-wines.jpg">
+                      </a>
+                      <p class="portfolio__item__note">UX, HTML, CSS, jQuery, Ghost, and DevOps</p>
+                    </div>
+                    <figcaption class="portfolio__item__caption">
+                      I helped the clients of Robert Houde Wines make better wine purchasing decisions by designing, developing, and deploying a responsive and user-centered company website.
+                    </figcaption>
+                  </figure>
+                </li>
+
+                <li class="item portfolio__item portfolio__item--web clearfix">
+                  <figure class="portfolio__item__image">
+                    <div class="image__container">
+                      <a href="http://chicagohistory.org/chicago24/">
+                        <img src="images/work/chicago-24.jpg">
+                      </a>
+                      <p class="portfolio__item__note">UX, HTML, CSS, and jQuery</p>
+                    </div>
+                    <figcaption class="portfolio__item__caption">
+                      My team designed, developed, and deployed the Chicago24 event website for the Chicago History Museum and its guests. We also conducted a series of user tests to ensure a positive experience for people who want to learn about Chicago24, and purchase tickets to discover Chicago’s unexpected history.
+                    </figcaption>
+                  </figure>
+                </li>
+
+                <li class="item portfolio__item portfolio__item--web clearfix">
+                  <figure class="portfolio__item__image">
+                    <div class="image__container">
+                      <a href="http://theshoelessjoe.tumblr.com/">
+                        <img src="images/work/shoeless-joe.jpg">
+                      </a>
+                      <p class="portfolio__item__note">UX, HTML, CSS, and jQuery</p>
+                    </div>
+                    <figcaption class="portfolio__item__caption">
+                      We designed a storytelling blog for Baseball fans and history buffs to experience the story of the Chicago Blacksox as told through the eyes of “Shoeless” Joe Jackson. I consulted on storytelling, and created the Tumblr theme to present the story&mdash;created by the Chicago History Museum.
+                    </figcaption>
+                  </figure>
+                </li>
+
+              </ul>
+            </div>
+            <div class="portfolio__tab__content" ng-show="tabCtrl.isSet(3)">
+              <ul class="items portfolio__items">
+               <li class="item portfolio__item portfolio__item--web clearfix">
+                  <figure class="portfolio__item__image">
+                    <div class="image__container">
+                      <a href="http://feedback.gravitytank.com">
+                        <img src="images/work/feedback.jpg">
+                      </a>
+                      <p class="portfolio__item__note">UX, HTML, CSS, Angular, Ruby on Rails, and DevOps</p>
+                    </div>
+                    <figcaption class="portfolio__item__caption">
+                      From May to August 2014, I worked with gravitytank, an innovation consultancy, to redefine their internal review system. They brought me in to provide objectivity, synthesize the product’s new meaning, and shape it into a user-centric functional prototype called <em>Feedback</em>.
+                      <br><br>
+                      To learn more about my process for creating <em>Feedback</em> please read <a href="https://medium.com/front-line-interaction-design/gravitytanks-internal-reviews-reimagined-7d2bce5de093">gravitytank’s Internal Reviews Reimagined</a>.
+                    </figcaption>
+                  </figure>
+                </li>
+
+                <li class="item portfolio__item portfolio__item--web clearfix">
+                  <figure class="portfolio__item__image">
+                    <div class="image__container">
+                      <a href="http://notetato.herokuapp.com">
+                        <img src="images/work/notetato.jpg">
+                      </a>
+                      <p class="portfolio__item__note">UX, HTML, CSS, Ruby on Rails, and DevOps</p>
+                    </div>
+                    <figcaption class="portfolio__item__caption">
+                      In essence <em>Notetato</em> is a wellness tool. Its purpose is to improve your mood by highlighting the work that is important to you, and centering on the good in your day. In its current state, <em>Notetato</em> is a prototype that I’m shaping and evolving with the people who use it.
+                      <br><br>
+                      If you’re interested in helping <em>Notetato</em> grow, please register at <a href="http://notetato.herokuapp.com">http://notetato.herokuapp.com</a>, try it out, and send feedback. I’d love to hear from you.
+                    </figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+          </section>
 
       </div>
     </div>
@@ -143,5 +244,7 @@
 
   </div>
 
+<script src="bower_components/angular/angular.js"></script>
+<script src="js/enrique.js"></script>
 </body>
 </html>
