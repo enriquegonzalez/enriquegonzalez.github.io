@@ -1,5 +1,5 @@
 (function(){
-var app = angular.module('enrique', []);
+var app = angular.module('enrique', ['ngAnimate']);
 
 app.controller('TabController', function(){
   this.tab = 1;  //default to show first tab

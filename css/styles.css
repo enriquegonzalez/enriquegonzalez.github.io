@@ -103,6 +103,10 @@ html, body {
       border-bottom: 3px solid hsla(0, 0%, 0%, 1);
     }
 
+  .portfolio__tab__content{
+    opacity: 1;
+  }
+
   .image__container {
     position: relative;
   }
@@ -203,6 +207,24 @@ html, body {
 .lowercase {
   text-transform: lowercase;
 }
+
+/* ANGULAR ANIMATIONS */
+
+.portfolio__tab__content.ng-hide {
+  opacity: 0;
+}
+
+
+.portfolio__tab__content.ng-hide.ng-hide-add,
+.portfolio__tab__content.ng-hide.ng-hide-remove,
+.portfolio__tab__content.ng-hide-remove,
+.portfolio__tab__content.ng-hide-add.ng-hide {
+  display: block !important;
+  -webkit-transition: .2s ease all;
+          transition: .2s ease all;
+}
+
+
 
 /*FOUNDATION OVERRIDES*/
 ul {
