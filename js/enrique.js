@@ -1,15 +1,15 @@
 (function(){
 var app = angular.module('enrique', ['ngAnimate']);
 
-app.controller('TabController', function(){
-  this.tab = 1;  //default to show first tab
+app.controller('TabController', function($scope){
+  $scope.tab = 1;  //default to show first tab
 
-  this.setTab = function(tab){
-    this.tab = tab;
+  $scope.setTab = function(tab){
+    $scope.tab = tab;
   };
 
-  this.isSet = function(checkTab){
-    return this.tab === checkTab;
+  $scope.isSet = function(checkTab){
+    return $scope.tab === checkTab;
   };
 
 });
