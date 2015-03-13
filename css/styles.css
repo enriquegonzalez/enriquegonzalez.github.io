@@ -5,7 +5,12 @@ html, body {
   height: initial;
 }
 
-.page {
+/*.page{
+  padding: 0;
+  margin: 0;
+}*/
+
+.page__contents {
   padding: 3rem;
 
 }
@@ -45,12 +50,14 @@ html, body {
     line-height: 1.65;
   }
 
-  .status {
-    color: hsla(0, 0%, 0%, 1);
-    font-size: 1.25rem;
-    font-style: italic;
+  .contact-me {
+    background: hsla(0, 0%, 93%, .25);
+    display: inline-block;
+    font-size: .9rem;
     font-weight: 300;
-    line-height: 1.5;
+    letter-spacing: .065rem;
+    padding: 1rem;
+    text-align: right;
   }
 
 .items {
@@ -248,7 +255,7 @@ img {
 
 @media only screen and (max-width: 240px){
 
-  .page {
+  .page__contents {
     padding: .25rem;
     margin-top: .25rem;
   }
@@ -275,11 +282,6 @@ img {
     .page__value-statement {
       font-size: .8rem;
       line-height: 1;
-    }
-
-    .status {
-      font-size: .75rem;
-      line-height: 1.25;
     }
 
      .portfolio {
@@ -356,9 +358,8 @@ img {
 
 @media only screen and (min-width: 241px) and (max-width: 40em) {
 
-  .page {
+  .page__contents {
     padding: 1rem;
-    margin-top: 1rem;
   }
 
     .page__header {
@@ -383,10 +384,6 @@ img {
     .page__value-statement {
       font-size: 1rem;
       line-height: 1.5;
-    }
-
-    .status {
-      font-size: .85rem;
     }
 
   .portfolio {
@@ -470,9 +467,8 @@ img {
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
-  .page {
+  .page__contents {
     padding: 1rem;
-    margin-top: 1rem;
   }
 
   .page__title {
@@ -489,10 +485,6 @@ img {
   .page__value-statement {
     font-size: 1.25rem;
     line-height: 1.5;
-  }
-
-  .status {
-    font-size: 1rem;
   }
 
   .portfolio__tab {
