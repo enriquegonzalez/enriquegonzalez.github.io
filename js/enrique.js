@@ -2,13 +2,7 @@
 var app = angular.module('enrique', ['ngAnimate']);
 
 app.controller('ContactCtrl', function($scope){
-  $scope.viewEmail = false;
-
-  $scope.toggleEmail = function(){
-    $scope.email = 'egonzalez78@gmail.com'
-    $scope.viewEmail = !$scope.viewEmail;
-  };
-
+  $scope.email = 'egonzalez78@gmail.com'
 })
 
 
