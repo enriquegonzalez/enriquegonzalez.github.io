@@ -277,6 +277,11 @@ img {
       line-height: 1;
     }
 
+    .status {
+      font-size: .75rem;
+      line-height: 1;
+    }
+
      .portfolio {
     padding: 1.25rem 0 0 0;
   }
@@ -380,6 +385,10 @@ img {
       line-height: 1.5;
     }
 
+    .status {
+      font-size: .85rem;
+    }
+
   .portfolio {
     padding: 1.25rem 0 0 0;
   }
@@ -480,6 +489,10 @@ img {
   .page__value-statement {
     font-size: 1.25rem;
     line-height: 1.5;
+  }
+
+  .status {
+    font-size: 1rem;
   }
 
   .portfolio__tab {
