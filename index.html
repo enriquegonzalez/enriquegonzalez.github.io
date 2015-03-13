@@ -38,17 +38,17 @@
 
     <div class="row">
       <div class="large-12 large-centered columns">
-        <header class="page__header">
+        <header class="page__header" ng-controller="ContactCtrl">
           <h1 class="title page__title">Hello, I’m Enrique</h1>
-          <p class="page__value-statement">I want to form a well-rounded team, craft meaningful stories, and provide great experiences for people. As an interaction designer&mdash;I can help our team figure out the best path to empower, delight, and enhance our users. I do this by applying a feedback cycle using interaction design methods including: data analysis, formative conversations, contextual inquiry, sketches, diagrams, prototypes, user tests, and summative conversations.</p>
-          <p class="page__value-statement">If you have an idea, product, or service that you want to conceptualize, create, refine, or reimagine&mdash;please let me know, I'd love to help.</p>
+          <p class="page__value-statement">I want to form a well-rounded team, craft meaningful stories, and provide great experiences. If you have an idea, product, or service that you want to conceptualize, create, refine, or reimagine&mdash;I'd love to <a ng-click="toggleEmail()">talk about it</a>. As an interaction designer, I can help discover the best path to empower, delight, and enhance our users.</p>
+          <div class="contact-me" ng-cloak ng-show="viewEmail">E-mail me at: {{email}}</div>
         </header>
       </div>
     </div>
 
     <div class="row">
       <div class="large-12 large-centered columns">
-        <section class="portfolio" ng-controller="TabController">
+        <section class="portfolio" ng-controller="TabCtrl">
           <header class="portfolio__header">
             <h1 class="title portfolio__title">Portfolio</h1>
           </header>

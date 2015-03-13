@@ -5,6 +5,16 @@ html, body {
   height: initial;
 }
 
+/*ANGULAR UTILITY*/
+[ng:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+
 .page {
   padding: 3rem;
 
@@ -444,6 +454,7 @@ img {
   .line-break {
     display: block;
   }
+
 
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
