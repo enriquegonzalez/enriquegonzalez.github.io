@@ -77,6 +77,7 @@ html, body {
 .portfolio {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
   padding: 4.25rem 3rem 3rem 3rem;
+  position: relative;
   text-align: center;
 }
 
@@ -117,6 +118,7 @@ html, body {
     .portfolio__tab__link--active {
       border-bottom: 3px solid hsla(0, 0%, 0%, 1);
     }
+
 
   .portfolio__tab__content{
     opacity: 1;
@@ -221,22 +223,6 @@ html, body {
 
 .lowercase {
   text-transform: lowercase;
-}
-
-/* ANGULAR ANIMATIONS */
-
-.portfolio__tab__content.ng-hide {
-  opacity: 0;
-}
-
-
-.portfolio__tab__content.ng-hide.ng-hide-add,
-.portfolio__tab__content.ng-hide.ng-hide-remove,
-.portfolio__tab__content.ng-hide-remove,
-.portfolio__tab__content.ng-hide-add.ng-hide {
-  display: block !important;
-  -webkit-transition: .2s ease all;
-          transition: .2s ease all;
 }
 
 
