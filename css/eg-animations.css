@@ -10,6 +10,6 @@
 .portfolio__tab__content.ng-hide-remove,
 .portfolio__tab__content.ng-hide-add.ng-hide {
   display: block !important;
-  -webkit-transition: .3s ease-in-out all;
-          transition: .3s ease-in-out all;
+  -webkit-transition: .4s ease-in-out all;
+          transition: .4s ease-in-out all;
 }

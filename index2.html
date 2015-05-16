@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#" ng-app="enrique">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enrique González | Interaction Design</title>
+
+  <meta property="og:title" content="Enrique González" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://enriquesportfolio.com/" />
+  <meta property="og:image" content="http://enriquesportfolio.com/images/enrique-gonzalez-sm.jpg" />
+  <meta property="og:description" content="Highlighted works of interaction design." />
+  <meta property="og:site_name" content="Enrique Gonzalez"/>
+
+
+  <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="bower_components/foundation/css/foundation.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/eg-animations.css" />
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.15/require.min.js" data-main="main" async></script>
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-37177746-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</head>
+<body class="page">
+  <div class="contact-me right" ng-controller="ContactCtrl" ng-cloak>
+      {{email}}
+  </div>
+
+  <div class="page__contents">
+
+    <div class="row">
+      <div class="large-12 large-centered columns">
+        <header class="page__header">
+          <h1 class="title page__title">Hello, I’m Enrique</h1>
+          <p class="page__value-statement">I want to join a collaborative team that crafts meaningful stories, and provides great experiences. As an interaction designer and technologist&mdash;I can help conceptualize, create, refine, and reimagine products that empower, delight, and enhance their users.</p>
+        </header>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 large-centered columns">
+        <section class="portfolio" ng-controller="TabCtrl">
+          <header class="portfolio__header">
+            <h2 class="title portfolio__title">Portfolio</h2>
+          </header>
+
+          <ul class="portfolio__tabs">
+            <li class="portfolio__tab">
+              <a class="portfolio__tab__link" ng-class="{'portfolio__tab__link--active' : isSet(1)}" ng-click="setTab(1)">
+                Articles
+              </a>
+            </li>
+            <li class="portfolio__tab">
+              <a class="portfolio__tab__link" ng-class="{'portfolio__tab__link--active' : isSet(2)}" ng-click="setTab(2)">
+                Websites
+              </a>
+            </li>
+            <li class="portfolio__tab">
+              <a class="portfolio__tab__link" ng-class="{'portfolio__tab__link--active' : isSet(3)}" ng-click="setTab(3)">
+                Web Apps
+              </a>
+            </li>
+          </ul>
+
+            <div class="portfolio__tab__content" ng-show="isSet(1)">
+              <ul class="items portfolio__items">
+                <li class="item portfolio__item">
+                  <h3 class="title item__title portfolio__item__title">
+                    <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/getting-smart-on-interaction-design-f525c2ca1078">Getting Smart <span class="line-break"><span class="lowercase">on</span> Interaction Design</span></a>
+                  </h3>
+                  <p class="portfolio__item__description">A brief essay on understanding and communicating interaction design.</p>
+                </li>
+                <li class="item portfolio__item">
+                  <h3 class="title item__title portfolio__item__title">
+                    <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/celebrate-your-failures-685b6b1efe08">Celebrate Your Failures</a>
+                  </h3>
+                  <p class="portfolio__item__description">Share the wisdom your failures provide.</p>
+                </li>
+                <li class="item portfolio__item">
+                  <h3 class="title item__title portfolio__item__title">
+                    <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/gravitytanks-internal-reviews-reimagined-7d2bce5de093"><span class="lowercase">gravitytank’s</span> <span class="line-break">Internal Reviews Reimagined</span></a>
+                  </h3>
+                  <p class="portfolio__item__description">Applying radical innovation to create a human-centered application.</p>
+                </li>
+                <li class="item portfolio__item">
+                  <h3 class="title item__title portfolio__item__title">
+                    <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/what-middle-schoolers-taught-me-about-prototyping-79fc83871e8b">Prototyping <span class="line-break"><span class="lowercase">with</span> Middle Schoolers</span></a>
+                  </h3>
+                  <p class="portfolio__item__description">Revealing the benefits of <span class="line-break">contextual inquiry.</span></p>
+                </li>
+                <li class="item portfolio__item">
+                  <h3 class="title item__title portfolio__item__title">
+                    <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/notebooks-164430ac5ce6">Storytelling <span class="line-break"><span class="lowercase">with</span> simple objects</span></a>
+                  </h3>
+                  <p class="portfolio__item__description">Telling the story of everyday things.</p>
+                </li>
+                <li class="item portfolio__item">
+                  <h3 class="title item__title portfolio__item__title">
+                    <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/i-accidentally-built-the-greatest-user-interface-106946b1115e">I Accidentally Built <span class="line-break"><span class="lowercase">the</span> Greatest User Interface</span></a>
+                  </h3>
+                  <p class="portfolio__item__description">A story about reframing <span class="line-break">and product design.</span></p>
+                </li>
+                <!-- <li class="item portfolio__item">
+                  <h3 class="title item__title portfolio__item__title">
+                    <a class="portfolio__item__link" href="https://medium.com/@enriquegonzalez/reflection-gratitude-and-focus-with-notetato-2e4ed9018a2">Reflection, <span class="line-break">Gratitude, <span class="lowercase">and</span> Focus</span></a>
+                  </h3>
+                  <p class="portfolio__item__description">
+                      It’s easy to get overwhelmed and forget about the things that matter. That’s why I created Notetato, a simple way to reset.
+                    </p>
+                </li>
+                <li class="item portfolio__item">
+                  <h3 class="title item__title portfolio__item__title">
+                    <a class="portfolio__item__link" href="http://google.com">Video Booth Lessons</a>
+                  </h3>
+                  <p class="portfolio__item__description">The Do's and Don'ts of Museum Exhibition Video Booths.</p>
+                </li>-->
+              </ul>
+            </div>
+            <div class="portfolio__tab__content" ng-show="isSet(2)">
+              <ul class="items portfolio__items">
+                <li class="item portfolio__item portfolio__item--web clearfix">
+                  <figure class="portfolio__item__image">
+                    <div class="image__container">
+                      <a href="http://roberthoudewines.com">
+                        <img src="images/work/robert-houde-wines.jpg">
+                      </a>
+                      <p class="portfolio__item__note">
+                        <span class="portfolio__item__note--skills hide-for-print">
+                          UX, HTML, CSS, jQuery, and Ghost
+                        </span>
+                      </p>
+                    </div>
+                    <p class="portfolio__item__caption">
+                      Many Robert Houde Wines buyers conduct business over their smartphone. I helped them make faster and better wine purchasing decisions by designing, developing, and deploying a responsive and user-centered website that enables them to browse available producers, learn more about Robert Houde Wines, and place orders on the same device.
+                    </p>
+   <!--                  <p class="portfolio__item__caption">
+                      Robert Houde Wines, LLC is a wine distributor in Illinois. For years they operated a Facebook page as their only web presence. I worked closely with partners Robert Houde and Mark Hutchens as an independent contractor to design, develop, and launch roberthoudewines.com.
+                    </p>
+                    <p class="portfolio__item__caption">
+                      There were a number of challenges I faced while creating this new web presence. Robert Houde Wines needed a website to inform their cutomers, promote their business, and express their expertise. They also needed the ability to easily update the website content while on the road.
+                    </p>
+                    <p class="portfolio__item__caption">
+                       I visited five wine buyers in Chicago to ask them about how they make buying decisions. This gave me a sense of the buyers mental model and context. I was able to use this information to structure the main focus of the page, which was to inform customers. Many Robert Houde Wines buyers conduct business over a smartphone. I helped them make faster and better wine purchasing decisions by designing, developing, and deploying a responsive and user-centered website that enables them to browse available producers, learn more about Robert Houde Wines, and place orders on the same device.
+                    </p>
+                    <p class="portfolio__item__caption">
+                       To help Robert Houde Wines promote their business I created and submitted a sitemap to Google. As well as applied opengraph and microformats to their website to improve search engine indexing and social media shares.
+                    </p>
+                    <p class="portfolio__item__caption">
+                       Robert Houde and Mark Hutches have a lot to say about wine and the wine world. They are also very busy running a company, so we decided to focus their insights on new arrivals to their producers list. I applied the Ghost blogging platform to enable Mark and Robert to easily discuss a new arrival&mdash;in exciting ways using different types of media&mdash;on their mobile device, and without needing to know code.
+                    </p>
+                    <p class="portfolio__item__caption">
+                      Robert and Mark have approached me on several occassions to tell me how happy they are with the website. I've also been fortunate enough to run into a customer who's shared how pleased he is with the website.
+                    </p>
+                    <p class="portfolio__item__caption">
+                      At the time I was developing roberthoudewines.com, the Ghost platform was only intended for blogging. Now it functions as a light weight CMS for small uncomplicated websites. Given the opportunity I would implement the entire Robert Houde Wines website on Ghost. As a design technologist I need to empower my clients. This means training them to become self-sufficient in maintaining simple and useful technology.
+                    </p> -->
+                  </figure>
+                </li>
+
+                 <li class="item portfolio__item portfolio__item--web clearfix">
+                  <figure class="portfolio__item__image">
+                    <div class="image__container">
+                      <a href="http://bmaustinlaw.com">
+                        <img src="images/work/bm-austin-law.jpg">
+                      </a>
+                       <p class="portfolio__item__note">
+                        <span class="portfolio__item__note--skills hide-for-print">
+                          UX, HTML, CSS, jQuery, and Jekyll
+                        </span>
+                      </p>
+                    </div>
+                    <figcaption class="portfolio__item__caption">
+                      Austin based start-ups and established businesses have another great option for transactional counsel. In 2013 I worked with Brian Mikulencak to design and develop this website about his practice; for his potential clients.
+                    </figcaption>
+                  </figure>
+                </li>
+
+                <li class="item portfolio__item portfolio__item--web clearfix">
+                  <figure class="portfolio__item__image">
+                    <div class="image__container">
+                      <a href="http://chicagohistory.org/chicago24/">
+                        <img src="images/work/chicago-24.jpg">
+                      </a>
+                       <p class="portfolio__item__note">
+                        <span class="portfolio__item__note--skills hide-for-print">
+                          UX, HTML, CSS, and jQuery
+                        </span>
+                      </p>
+                    </div>
+                    <figcaption class="portfolio__item__caption">
+                      In 2013 my team designed, developed, and deployed the Chicago24 event website for the Chicago History Museum and its guests. We conducted a series of user tests to ensure a positive experience for people wanting to learn about, and purchase tickets to Chicago24.<br><br>
+                      The responsive design of the website makes it easy for users to view and make purchases on their mobile devices, especially while on the go. Because of its successful design; the Museum continues to use the it as a template for the event.
+                    </figcaption>
+                  </figure>
+                </li>
+
+                <li class="item portfolio__item portfolio__item--web clearfix">
+                  <figure class="portfolio__item__image">
+                    <div class="image__container">
+                      <a href="http://theshoelessjoe.tumblr.com/">
+                        <img src="images/work/shoeless-joe.jpg">
+                      </a>
+                      <p class="portfolio__item__note">
+                        <span class="portfolio__item__note--skills hide-for-print">
+                          UX, HTML, CSS, and jQuery
+                        </span>
+                      </p>
+                    </div>
+                    <figcaption class="portfolio__item__caption">
+                      We designed a storytelling blog for Baseball fans and history buffs to experience the story of the Chicago Blacksox as told through the eyes of “Shoeless” Joe Jackson. I consulted on storytelling, and created the Tumblr theme to present the story&mdash;created by the Chicago History Museum.
+                      <br><br>
+                      The story is still in progress, but the baseball history community has already shown great interest in it's development.
+                    </figcaption>
+                  </figure>
+                </li>
+
+              </ul>
+            </div>
+            <div class="portfolio__tab__content" ng-show="isSet(3)">
+              <ul class="items portfolio__items">
+               <li class="item portfolio__item portfolio__item--web clearfix">
+                  <figure class="portfolio__item__image">
+                    <div class="image__container">
+                      <a href="http://feedback.gravitytank.com">
+                        <img src="images/work/feedback.jpg">
+                      </a>
+                      <p class="portfolio__item__note">
+                        <span class="portfolio__item__note--skills hide-for-print">
+                          UX, HTML, CSS, Angular, and Ruby on Rails
+                        </span>
+                      </p>
+                    </div>
+                    <figcaption class="portfolio__item__caption">
+                      From May to August 2014, I worked with gravitytank, an innovation consultancy, to help redefine their internal review system. They brought me in to provide objectivity, synthesize the product’s new meaning, and shape it into a user-centric functional prototype titled <em>Feedback</em>. gravitytank highly appreciated my interpretation of their new system, and continues to evolve its design.
+                      <br><br>
+                      I applied lean and agile&mdash;design and development&mdash;methodologies to create <em>Feedback</em>. Learn more about my process by reading <a href="https://medium.com/front-line-interaction-design/gravitytanks-internal-reviews-reimagined-7d2bce5de093">gravitytank’s Internal Reviews Reimagined</a>.
+                    </figcaption>
+                  </figure>
+                </li>
+
+                <li class="item portfolio__item portfolio__item--web clearfix">
+                  <figure class="portfolio__item__image">
+                    <div class="image__container">
+                      <a href="http://notetato.herokuapp.com">
+                        <img src="images/work/notetato.jpg">
+                      </a>
+                      <p class="portfolio__item__note">
+                        <span class="portfolio__item__note--skills hide-for-print">
+                          UX, HTML, CSS, and Ruby on Rails
+                        </span>
+                      </p>
+                    </div>
+                    <figcaption class="portfolio__item__caption">
+                      In essence <em>Notetato</em> is a wellness tool. Its purpose is to improve your mood by highlighting the work that is important to you, and centering on the good in your day. In its current state, <em>Notetato</em> is a prototype that I’m shaping and evolving with the people who use it.
+                      <br><br>
+                      The next evolutionary steps for <em>Notetato</em> are core scope simplification, and user interface refinement. If you’re interested in helping <em>Notetato</em> grow, please register at <a href="http://notetato.herokuapp.com">http://notetato.herokuapp.com</a>, try it out, and send feedback. I’d love to hear from you.
+                    </figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+
+          </section>
+
+      </div>
+    </div>
+
+    <div class="row hide-for-print">
+      <div class="large-12 large-centered columns">
+        <footer class="footer">
+          <aside class="social-media">
+            <ul class="items">
+              <li class="item social-media__item social-media__item--twitter">
+                <a href="https://twitter.com/enriquegonzalez">
+                  <img class="social-media__image" src="images/twitter-bird-white.png" alt="Twitter">
+                </a>
+              </li>
+              <li class="item social-media__item">
+                <a class="social-media__link" href="http://instagram.com/egonzalez78">
+                  <img class="social-media__image" src="images/instagram-glyph.png" alt="Instagram">
+                </a>
+              </li>
+              <li class="item social-media__item">
+                <a href="https://linkedin.com/in/enriquegonzalez/">
+                  <img class="social-media__image" src="images/linked-in-black.png" alt="LinkedIn">
+                </a>
+              </li>
+              <li class="item social-media__item">
+                <a href="https://github.com/enriquegonzalez">
+                  <img class="social-media__image" src="images/github-mark.png" alt="GitHub">
+                </a>
+              </li>
+            </ul>
+          </aside>
+          <p class="copyright">Enrique Gonzalez, Copyright &copy;2015, <span class="line-break">All rights reserved.</span></p>
+        </footer>
+      </div>
+    </div>
+
+  </div>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="js/enrique.js"></script>
+</body>
+</html>
