@@ -213,8 +213,13 @@ html, body {
 
 .work-page__subheading {
   font-family: 'Abril Fatface', cursive;
+  font-size: 1.8rem;
   letter-spacing: .065rem;
   text-transform: uppercase;
+}
+
+.work-page__subheading--small {
+  font-size: 1.65rem;
 }
 
 
