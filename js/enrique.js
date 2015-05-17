@@ -13,7 +13,7 @@ app.config(['$routeProvider', '$locationProvider',
         templateUrl: '/work/gravitytank-feedback.html',
       })
       .otherwise({
-        controller: 'Error404Controller',
+        controller: 'Error404Ctrl',
         templateUrl: '/404.html'
       });
 
