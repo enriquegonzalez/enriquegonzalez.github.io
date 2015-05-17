@@ -177,8 +177,14 @@ html, body {
   line-height: 1.5;
 }
 
-.work--page {
-  margin: 3rem 0
+.work-page {
+  margin: 3rem 0;
+  text-align: left;
+}
+
+.work-page__header {
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .work-item__context--page {
