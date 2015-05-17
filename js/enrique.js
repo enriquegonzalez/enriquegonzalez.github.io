@@ -9,7 +9,7 @@ app.config(['$routeProvider', '$locationProvider',
         // controller: 'WorkCtrl',
         // controllerAs: 'work'
       })
-      .when('gravitytank-feedback', {
+      .when('/work/gravitytank-feedback', {
         templateUrl: '/work/gravitytank-feedback.html',
       })
       .otherwise({
