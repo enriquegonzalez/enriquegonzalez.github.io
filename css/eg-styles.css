@@ -212,6 +212,7 @@ html, body {
 
 .work-page__subheading {
   font-family: 'Abril Fatface', cursive;
+  text-transform: uppercase;
 }
 
 
