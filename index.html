@@ -36,7 +36,7 @@
   </script>
 
 </head>
-<body class="page">
+<body ng-cloak class="page">
   <div class="contact-me right" ng-controller="ContactCtrl" ng-cloak>
       {{email}}
   </div>
@@ -72,7 +72,7 @@
             </li>
           </ul>
 
-          <div ng-cloak class="portfolio__tab__content" ng-show="isSet(1)">
+          <div class="portfolio__tab__content" ng-show="isSet(1)">
             <ng-view></ng-view>
           </div>
 
