@@ -183,7 +183,7 @@ html, body {
   text-align: left;
 }
 
-.work-page > p {
+.work-page > p, .work-page > ol li {
   font-size: 1.25rem;
   font-weight: 300;
 }
