@@ -151,8 +151,8 @@ html, body {
 /* Portfolio Work Items */
 
 .portfolio__item--web {
-
-  margin: 3rem 0;
+  margin: 2rem 0;
+  padding: 2rem 1rem;
 }
 
 .work-item__context {
@@ -230,6 +230,11 @@ ul {
 
 img {
   width: 100%;
+}
+
+.button {
+  letter-spacing: .065rem;
+  text-transform: uppercase;
 }
 
 // Small screens
