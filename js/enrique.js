@@ -13,7 +13,7 @@ app.config(['$routeProvider', '$locationProvider',
         templateUrl: '/work/gravitytank-feedback.html'
       })
       .otherwise({
-        templateUrl: '/404.html'
+        templateUrl: '404.html'
       });
 
     $locationProvider.html5Mode(true);
