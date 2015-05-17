@@ -11,13 +11,10 @@ app.config(['$routeProvider', '$locationProvider',
       })
       .when('/work/gravitytank-feedback', {
         templateUrl: '/work/gravitytank-feedback.html',
-        // controller: 'WorkCtrl',
-        // controllerAs: 'work'
       })
       .otherwise({
-        controller : function(){
-          window.location.replace('/');
-        }
+        controller: 'Error404Controller',
+        templateUrl: '/404.html'
       });
 
     $locationProvider.html5Mode(true);
