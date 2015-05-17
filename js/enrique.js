@@ -15,7 +15,9 @@ app.config(['$routeProvider', '$locationProvider',
         // controllerAs: 'work'
       })
       .otherwise({
-        redirectTo: '/'
+        controller : function(){
+          window.location.replace('/');
+        }
       });
 
     $locationProvider.html5Mode(true);
