@@ -185,6 +185,7 @@ html, body {
 
 .work-page > p {
   font-size: 1.25rem;
+  font-weight: 300;
 }
 
 .work-page__header {
@@ -212,6 +213,7 @@ html, body {
 
 .work-page__subheading {
   font-family: 'Abril Fatface', cursive;
+  letter-spacing: .065rem;
   text-transform: uppercase;
 }
 
