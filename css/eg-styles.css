@@ -177,6 +177,14 @@ html, body {
   line-height: 1.5;
 }
 
+.work-item__context--page {
+  font-size: 2rem;
+}
+
+.work-item__title--page {
+  font-size: 1.65rem;
+}
+
 
 /* Footer */
 .footer {
