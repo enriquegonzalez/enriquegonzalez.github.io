@@ -5,7 +5,7 @@ app.config(['$routeProvider', '$locationProvider',
   function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: '/work/index.html',
+        templateUrl: '/work/work.html',
         // controller: 'WorkCtrl',
         // controllerAs: 'work'
       })
