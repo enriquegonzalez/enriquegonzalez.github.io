@@ -29,8 +29,8 @@ app.controller('TabCtrl', function($scope, $location){
   $scope.tab = 1;  //default to show first tab
 
   $scope.setTab = function(tab){
-    $location.path('/');
     $scope.tab = tab;
+    $location.path('/');
   };
 
   $scope.isSet = function(checkTab){
