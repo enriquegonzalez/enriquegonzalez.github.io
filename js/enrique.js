@@ -29,7 +29,7 @@ app.controller('TabCtrl', function($scope){
   $scope.tab = 1;  //default to show first tab
 
   $scope.setTab = function(tab){
-    $location.url('/');
+    $location.path('/');
     $scope.tab = tab;
   };
 
