@@ -5,12 +5,12 @@ app.config(['$routeProvider', '$locationProvider',
   function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: '/work/work.html',
+        templateUrl: '/work/work.html'
         // controller: 'WorkCtrl',
         // controllerAs: 'work'
       })
       .when('/work/gravitytank-feedback', {
-        templateUrl: '/work/gravitytank-feedback.html',
+        templateUrl: '/work/gravitytank-feedback.html'
       })
       .otherwise({
         templateUrl: '/404.html'
