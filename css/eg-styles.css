@@ -223,6 +223,11 @@ html, body {
   letter-spacing: .035rem;
 }
 
+.work-page__subheading--xsmall {
+  color: hsla(0,0%,60%,1);
+  font-size: 1.4rem;
+}
+
 .subheading__note {
   background: hsla(0,0%,0%,1);
   color: hsla(360,100%,100%,1);
