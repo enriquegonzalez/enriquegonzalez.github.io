@@ -223,6 +223,13 @@ html, body {
   letter-spacing: .035rem;
 }
 
+.subheading__note {
+  background: hsla(0,0%,0%,1);
+  color: hsla(360,100%,100%,1);
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
 
 /* Footer */
 .footer {
