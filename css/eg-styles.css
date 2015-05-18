@@ -225,7 +225,7 @@ html, body {
 
 .work-page__subheading--xsmall {
   color: hsla(0,0%,60%,1);
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 300;
   letter-spacing: .065rem;
   text-transform: uppercase;
