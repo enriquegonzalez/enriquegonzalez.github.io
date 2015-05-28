@@ -280,6 +280,11 @@ html, body {
   margin-bottom: 5rem;
 }
 
+/* Helpers */
+
+.bold {
+  font-weight: 600;
+}
 
 .italic {
   font-style:  italic;
