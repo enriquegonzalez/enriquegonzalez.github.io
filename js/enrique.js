@@ -12,6 +12,9 @@ app.config(['$routeProvider', '$locationProvider',
       .when('/work/gravitytank-feedback', {
         templateUrl: 'templates/work/gravitytank-feedback.html'
       })
+      .when('/work/digital-storytelling', {
+        templateUrl: 'templates/work/digital-storytelling.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
