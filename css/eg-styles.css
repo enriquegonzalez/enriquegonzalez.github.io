@@ -6,6 +6,10 @@ html, body {
   font-size: 16px;
 }
 
+p {
+  font-weight: 300;
+}
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
