@@ -21,7 +21,8 @@ requirejs.config({
     "foundation.topbar": 'bower_components/foundation/js/foundation/foundation.topbar',
     "angular": 'bower_components/angular/angular',
     "angular-animate": 'bower_components/angular-animate/angular-animate',
-    "angular-route": 'bower_components/angular-route/angular-route'
+    "angular-route": 'bower_components/angular-route/angular-route',
+    "ngDialog": 'bower_components/ngDialog/js/ngDialog'
   },
   shim: {
     "jquery.cookie": ['jquery'],
@@ -48,6 +49,6 @@ requirejs.config({
   }
 });
 
-require(['jquery', 'foundation', 'angular', 'angular-animate', 'angular-route'], function($) {
+require(['jquery', 'foundation', 'angular', 'angular-animate', 'angular-route', 'ngDialog'], function($) {
     $(document).foundation();
 });
