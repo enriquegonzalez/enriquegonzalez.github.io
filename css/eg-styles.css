@@ -296,7 +296,6 @@ ol > li:last-child > p {
 .action {
   display: block;
   margin: 1rem;
-  text-align: center;
 }
 
 .bold {
