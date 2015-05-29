@@ -14,7 +14,7 @@ ol > li > p {
   margin-bottom: 0;
 }
 
-ol > li > p:last-of-type {
+ol > li:last-child > p {
   margin-bottom: 1.25rem;
 }
 
