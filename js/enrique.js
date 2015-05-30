@@ -52,17 +52,5 @@ app.controller('WorkCtrl', function ($scope, ngDialog) {
 
 });
 
-app.controller('TestCtrl', function ($scope, ngDialog) {
-
-   $scope.openTest = function () {
-      console.log("Test!");
-      ngDialog.open({
-        template: '/templates/work/modals/ds-test.html',
-        className: 'ngdialog-theme-default'
-      });
-    };
-
-});
-
 })();
 
