@@ -252,6 +252,16 @@ ol > li:last-child > p {
   text-transform: uppercase;
 }
 
+.subheading__note--list:first-of-type {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.subheading__note--list {
+  margin-bottom: 0;
+  margin-top: 1.25rem;
+}
+
 
 /* Footer */
 .footer {
