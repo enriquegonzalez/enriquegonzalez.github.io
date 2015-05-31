@@ -15,6 +15,9 @@ app.config(['$routeProvider', '$locationProvider',
       .when('/work/digital-storytelling', {
         templateUrl: 'templates/work/digital-storytelling.html'
       })
+      .when('/work/simple-impactful-innovation', {
+        templateUrl: 'templates/work/simple-impactful-innovation.html'
+      })
       .otherwise({
         redirectTo: '/'
       });

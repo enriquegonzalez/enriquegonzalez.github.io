@@ -336,6 +336,10 @@ ol > li:last-child > p {
   text-transform: lowercase;
 }
 
+.text--left{
+  text-align: left;
+}
+
 
 /*FOUNDATION OVERRIDES*/
 ul {
