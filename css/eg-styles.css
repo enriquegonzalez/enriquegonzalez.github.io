@@ -262,6 +262,15 @@ ol > li:last-child > p {
   margin-top: 1.25rem;
 }
 
+.image__title {
+  font-size: .85rem;
+  letter-spacing: .065rem;
+  margin: .25rem 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 
 /* Footer */
 .footer {
