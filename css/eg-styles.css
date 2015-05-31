@@ -224,22 +224,29 @@ ol > li:last-child > p {
 }
 
 .work-page__subheading {
+  border-top: 1px dotted hsla(0,0%,0%,.25);
   font-family: 'Abril Fatface', cursive;
   font-size: 1.8rem;
   letter-spacing: .065rem;
+  margin-top: 3rem;
+  padding-top: 1rem;
   text-transform: uppercase;
 }
 
 .work-page__subheading--small {
-  font-size: 1.4rem;
+  border: none;
+  font-size: 1.25rem;
   letter-spacing: .035rem;
+  margin-top: 0;
 }
 
 .work-page__subheading--xsmall {
+  border: none;
   color: hsla(0,0%,60%,1);
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: .065rem;
+  margin-top: 0;
   text-transform: uppercase;
 }
 
@@ -337,7 +344,7 @@ ul {
 
 img {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .button {
