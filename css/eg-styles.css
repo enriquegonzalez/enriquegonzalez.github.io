@@ -198,7 +198,22 @@ ol > li:last-child > p {
 .work-page > p, .work-page > ol li {
   font-size: 1.25rem;
   font-weight: 300;
+
 }
+
+.work-page__media {
+  font-size: 1.25rem;
+  margin: 0;
+  text-align: left;
+}
+
+.work-page__media > p, .work-page__media > ol li {
+  font-size: 1.25rem;
+  font-weight: 300;
+
+}
+
+
 
 .work-page__header {
   margin-bottom: 2rem;
