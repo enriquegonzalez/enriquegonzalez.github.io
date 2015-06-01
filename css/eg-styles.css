@@ -2,7 +2,7 @@
 /*black: hsla(0, 0%, 0%, 1);*/
 
 html, body {
-  height: initial;
+  height: 100%;
   font-size: 16px;
 }
 
@@ -30,6 +30,10 @@ ol > li:last-child > p {
 .page__contents {
   padding: 3rem;
 
+}
+
+.page--404 {
+  /*padding-top: 10rem;*/
 }
 
 
@@ -377,6 +381,14 @@ img {
 
 .button--black:hover {
   background-color:  hsla(0,0%,0%,.85);
+}
+
+.button--404 {
+  background-color:  hsla(0,0%,30%,.95);
+}
+
+.button--404:hover {
+  background-color:  hsla(0,0%,30%,.95);
 }
 
 // Small screens
