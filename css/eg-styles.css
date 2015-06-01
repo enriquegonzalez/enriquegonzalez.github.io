@@ -33,7 +33,13 @@ ol > li:last-child > p {
 }
 
 .page--404 {
-  /*padding-top: 10rem;*/
+  background: url('../images/bg-404.jpg');
+}
+
+.page__contents--404 {
+  background: hsla(360,100%,100%,.85);
+  border: 3px dotted hsla(0,0%,0%,.85);
+  padding: 2rem;
 }
 
 
@@ -388,7 +394,7 @@ img {
 }
 
 .button--404:hover {
-  background-color:  hsla(0,0%,30%,.95);
+  background-color:  hsla(0,0%,0%,.85);
 }
 
 // Small screens
