@@ -6,8 +6,6 @@ app.config(['$routeProvider', '$locationProvider',
     $routeProvider
       .when('/', {
         templateUrl: 'templates/work/work.html'
-        // controller: 'WorkCtrl',
-        // controllerAs: 'work'
       })
       .when('/work/gravitytank-feedback', {
         templateUrl: 'templates/work/gravitytank-feedback.html'
