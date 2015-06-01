@@ -16,9 +16,6 @@
 
   <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="bower_components/foundation/css/foundation.css" />
-  <link rel="stylesheet" href="bower_components/ngDialog/css/ngDialog.css" />
-  <link rel="stylesheet" href="bower_components/ngDialog/css/ngDialog-theme-default.css" />
-  <link rel="stylesheet" href="bower_components/ngDialog/css/ngDialog-custom-width.css" />
   <link rel="stylesheet" href="css/eg-styles.css" />
   <link rel="stylesheet" href="css/eg-animations.css" />
   <script src="bower_components/modernizr/modernizr.js"></script>
@@ -76,7 +73,7 @@
           </ul>
 
           <div class="portfolio__tab__content" ng-show="isSet(1)">
-            <ng-view ng-controller="WorkCtrl"></ng-view>
+            <ng-view></ng-view>
           </div>
 
 
@@ -163,7 +160,6 @@
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
-<script src="bower_components/ngDialog/js/ngDialog.js"></script>
 <script src="js/enrique.js"></script>
 </body>
 </html>

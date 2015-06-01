@@ -1,5 +1,5 @@
 (function(){
-var app = angular.module('enrique', ['ngAnimate', 'ngRoute', 'ngDialog']);
+var app = angular.module('enrique', ['ngAnimate', 'ngRoute']);
 
 app.config(['$routeProvider', '$locationProvider',
   function($routeProvider, $locationProvider) {
@@ -44,16 +44,6 @@ app.controller('TabCtrl', function($scope, $location){
 
 });
 
-app.controller('WorkCtrl', function ($scope, ngDialog) {
-    $scope.openSurprise = function () {
-      console.log("Surprise!");
-      ngDialog.open({
-        template: '/templates/work/modals/ds-surprise.html',
-        className: 'ngdialog-theme-default'
-      });
-    };
-
-});
 
 })();
 
