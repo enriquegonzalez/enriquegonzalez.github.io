@@ -34,6 +34,7 @@ app.controller('ContactCtrl', function($scope){
 
 app.controller('TabCtrl', function($scope, $location){
   $scope.tab = 1;  //default to show first tab
+  $scope.pageScroll = false;
 
   $scope.setTab = function(tab){
     $scope.tab = tab;
@@ -43,6 +44,10 @@ app.controller('TabCtrl', function($scope, $location){
   $scope.isSet = function(checkTab){
     return $scope.tab === checkTab;
   };
+
+  $scope.setPageScroll = function(scroll){
+    $scope.pageScroll = scroll;
+  }
 
 });
 
