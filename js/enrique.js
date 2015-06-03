@@ -25,6 +25,7 @@ app.config(['$urlRouterProvider', '$stateProvider',
         templateUrl: 'templates/work/simple-impactful-innovation.html'
       });
 
+
 }]);
 
 app.controller('ContactCtrl', function($scope){
