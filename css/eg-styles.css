@@ -57,7 +57,7 @@ ol > li:last-child > p {
   }
 
     .page__title {
-      font-family: 'Abril Fatface', cursive;
+      font-family: 'Abril Fatface', Arial;
       font-weight: 300;
       text-transform: capitalize;
     }
@@ -97,7 +97,7 @@ ol > li:last-child > p {
   }
 
     .item__title {
-      font-family: 'Abril Fatface', cursive;
+      font-family: 'Abril Fatface', Arial;
       text-transform: capitalize;
     }
 
@@ -182,7 +182,7 @@ ol > li:last-child > p {
 }
 
 .work-item__context {
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Abril Fatface', Arial;
   font-size: 1.65rem;
   font-weight: 500;
   line-height: 1.5;
@@ -231,7 +231,7 @@ ol > li:last-child > p {
 }
 
 .work-page__context {
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Abril Fatface', Arial;
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.5;
@@ -250,7 +250,7 @@ ol > li:last-child > p {
 
 .work-page__subheading {
   border-top: 1px dotted hsla(0,0%,0%,.25);
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Abril Fatface', Arial;
   font-size: 1.8rem;
   letter-spacing: .065rem;
   margin-top: 3rem;

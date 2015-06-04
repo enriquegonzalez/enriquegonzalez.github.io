@@ -23,6 +23,10 @@ app.config(['$urlRouterProvider', '$stateProvider',
       .state('innovation', {
         url: '/work/simple-impactful-innovation',
         templateUrl: 'templates/work/simple-impactful-innovation.html'
+      })
+      .state('educational', {
+        url: '/work/educational-product-design',
+        templateUrl: 'templates/work/educational-product-design.html'
       });
 
 
