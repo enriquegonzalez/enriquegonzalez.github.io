@@ -267,12 +267,11 @@ ol > li:last-child > p {
 
 .work-page__subheading--xsmall {
   border: none;
-  color: hsla(0,0%,80%,1);
-  font-size: 1rem;
-  font-weight: 300;
+  color: hsla(0,0%,25%,1);
+  font-size: 1.25rem;
   letter-spacing: .065rem;
   margin-top: 0;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .subheading__note {
