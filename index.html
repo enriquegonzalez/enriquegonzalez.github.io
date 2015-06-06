@@ -61,19 +61,19 @@
 
           <ul class="portfolio__tabs">
             <li class="portfolio__tab">
-              <a class="portfolio__tab__link" ng-class="{'portfolio__tab__link--active' : isSet(1)}" ng-click="setTab(1)">
+              <a class="portfolio__tab__link" ng-class="{'portfolio__tab__link--active' : isSet(1)}" ng-click="setTab(1); setPageScroll(false)">
                 Work
               </a>
             </li>
             <li class="portfolio__tab">
-              <a class="portfolio__tab__link" ng-class="{'portfolio__tab__link--active' : isSet(2)}" ng-click="setTab(2)">
+              <a class="portfolio__tab__link" ng-class="{'portfolio__tab__link--active' : isSet(2)}" ng-click="setTab(2); setPageScroll(false)">
                 Articles
               </a>
             </li>
           </ul>
 
           <div class="portfolio__tab__content" ng-show="isSet(1)">
-            <ui-view autoscroll='pageScroll'></ui-view>
+            <ui-view autoscroll='pageScroll' class="fade"></ui-view>
           </div>
 
 
