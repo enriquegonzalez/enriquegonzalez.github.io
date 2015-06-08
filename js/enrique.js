@@ -27,6 +27,10 @@ app.config(['$urlRouterProvider', '$stateProvider',
       .state('educational', {
         url: '/work/educational-product-design',
         templateUrl: 'templates/work/educational-product-design.html'
+      })
+      .state('articles', {
+        url: '/articles/articles',
+        templateUrl: 'templates/articles/articles.html'
       });
 
 
