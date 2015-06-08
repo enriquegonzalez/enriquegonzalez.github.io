@@ -36,6 +36,16 @@ app.config(['$urlRouterProvider', '$stateProvider',
 
 }]);
 
+app.config(function ($provide) {
+  $provide.decorator('$uiViewScroll', function ($delegate) {
+    return function (uiViewElement) {
+        $('html,body').animate({
+            scrollTop: uiViewElement.offset().top
+        }, 500);
+    };
+  });
+});
+
 app.controller('ContactCtrl', function($scope){
   $scope.email = 'egonzalez78@gmail.com'
 });
