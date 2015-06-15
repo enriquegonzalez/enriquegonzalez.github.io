@@ -7,7 +7,7 @@ p {
   font-weight: 300;
 }
 
-ul, ol {
+/*ul, ol {
   margin: 0 0 1.4rem 1.4rem;
 }
 
@@ -18,7 +18,7 @@ ul > li > p, ol > li > p {
 ul > li:last-child > p, ol > li:last-child > p {
   margin-bottom: 0;
 }
-
+*/
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
@@ -368,7 +368,6 @@ ul {
 
 img {
   width: 100%;
-  margin: 1rem 0;
 }
 
 .button {
