@@ -16,7 +16,7 @@ ul > li:last-child > p, ol > li:last-child > p {
 }
 
 ul, ol {
-  margin-bottom: 1.25rem;
+  margin: 1.25rem 0;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
