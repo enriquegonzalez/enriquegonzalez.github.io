@@ -674,6 +674,10 @@ img {
     display: block;
   }
 
+  .invisible--small {
+    display: none;
+  }
+
 
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
