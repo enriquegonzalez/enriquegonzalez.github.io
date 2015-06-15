@@ -15,10 +15,6 @@ ul > li:last-child > p, ol > li:last-child > p {
   margin-bottom: 0;
 }
 
-ul > li:last-child > p, ol > li:last-child > p {
-  margin-bottom: 1.25rem;
-}
-
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
