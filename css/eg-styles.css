@@ -389,6 +389,8 @@ img {
 }
 
 // Small screens
+@media only screen { } /* Define mobile styles */
+
 @media only screen and (max-width: 240px){
 
   .page__contents {
