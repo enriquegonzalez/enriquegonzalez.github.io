@@ -1,37 +1,18 @@
+/* COLOR */
+/*black: hsla(0, 0%, 0%, 1);*/
+
 html, body {
-  height: 100%;
-  font-size: 16px;
+  height: initial;
 }
 
-p {
-  font-weight: 300;
-}
-
-ol > li > p {
-  margin-bottom: 0;
-}
-
-ol > li:last-child > p {
-  margin-bottom: 1.25rem;
-}
-
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-  display: none !important;
-}
+/*.page{
+  padding: 0;
+  margin: 0;
+}*/
 
 .page__contents {
   padding: 3rem;
 
-}
-
-.page--404 {
-  background: url('../images/bg-404.jpg');
-}
-
-.page__contents--404 {
-  background: hsla(360,100%,100%,.85);
-  border: 3px dotted hsla(0,0%,0%,.85);
-  padding: 2rem;
 }
 
 
@@ -49,7 +30,7 @@ ol > li:last-child > p {
   }
 
     .page__title {
-      font-family: 'Abril Fatface', Arial;
+      font-family: 'Abril Fatface', cursive;
       font-weight: 300;
       text-transform: capitalize;
     }
@@ -89,7 +70,7 @@ ol > li:last-child > p {
   }
 
     .item__title {
-      font-family: 'Abril Fatface', Arial;
+      font-family: 'Abril Fatface', cursive;
       text-transform: capitalize;
     }
 
@@ -143,6 +124,10 @@ ol > li:last-child > p {
     opacity: 1;
   }
 
+  .image__container {
+    position: relative;
+  }
+
   .portfolio__item__image {
     margin: 0 0 5rem 0;
   }
@@ -164,138 +149,35 @@ ol > li:last-child > p {
     line-height: 1.5;
   }
 
+  .portfolio__item__caption {
+    color: hsla(0, 0%, 0%, .65);
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 2rem;
+    text-align: left;
+  }
 
+  .portfolio__item__note {
+    background: hsla(0, 0%, 0%, 1);
+    display: inline-block;
+    padding: .25rem;
+    position: absolute;
+    bottom: -2rem;
+    right: 0;
+    text-align: right;
+    width: 100%;
+  }
+    .portfolio__item__note--skills {
+      background: hsla(199, 80%, 80%, 1);
+      border-radius: .25rem;
+      color: hsla(0, 0%, 0%, 1);
+      font-size: .85rem;
+      font-weight: 300;
+      line-height: 1.5;
+      padding: .25rem .5rem;
+    }
 
-/* Portfolio Work Items */
-
-.portfolio__item--web {
-  margin: 2rem 0;
-  padding: 2rem 1rem;
-}
-
-.work-item__context {
-  font-family: 'Abril Fatface', Arial;
-  font-size: 1.65rem;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: .065rem;
-  margin-bottom: 0;
-  text-transform: capitalize;
-}
-
-.work-item__title {
-  color: hsla(0, 0%, 0%, .65);
-  font-size: 1.25rem;
-  font-style: italic;
-  font-weight: 300;
-  line-height: 1.5;
-}
-
-.work-page {
-  font-size: 1.25rem;
-  margin: 3rem 0;
-  text-align: left;
-}
-
-.work-page > p, .work-page > ol li {
-  font-size: 1.25rem;
-  font-weight: 300;
-
-}
-
-.work-page__media {
-  font-size: 1.25rem;
-  margin: 0;
-  text-align: left;
-}
-
-.work-page__media > p, .work-page__media > ol li {
-  font-size: 1.25rem;
-  font-weight: 300;
-
-}
-
-
-
-.work-page__header {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.work-page__context {
-  font-family: 'Abril Fatface', Arial;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: .065rem;
-  margin-bottom: 0;
-  text-transform: capitalize;
-}
-
-.work-page__title {
-  color: hsla(0, 0%, 0%, .65);
-  font-size: 1.65rem;
-  font-style: italic;
-  font-weight: 300;
-  line-height: 1.5;
-}
-
-.work-page__subheading {
-  border-top: 1px dotted hsla(0,0%,0%,.25);
-  font-family: 'Abril Fatface', Arial;
-  font-size: 1.8rem;
-  letter-spacing: .065rem;
-  margin-top: 3rem;
-  padding-top: 1rem;
-  text-transform: uppercase;
-}
-
-.work-page__subheading--small {
-  border: none;
-  font-size: 1.25rem;
-  letter-spacing: .035rem;
-  margin-top: 0;
-}
-
-.work-page__subheading--xsmall {
-  border: none;
-  color: hsla(0,0%,25%,1);
-  font-size: 1.25rem;
-  letter-spacing: .065rem;
-  margin-top: 0;
-  text-transform: capitalize;
-}
-
-.subheading__note {
-  background: hsla(0,0%,0%,1);
-  color: hsla(360,100%,100%,1);
-  font-size: .85rem;
-  letter-spacing: .065rem;
-  padding: .25rem 1rem;
-  text-transform: uppercase;
-}
-
-.subheading__note--list:first-of-type {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.subheading__note--list {
-  margin-bottom: 0;
-  margin-top: 1.25rem;
-}
-
-.image__title {
-  font-size: .85rem;
-  letter-spacing: .065rem;
-  margin: .25rem 0;
-  padding: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-
-/* Footer */
 .footer {
   text-align: center;
 }
@@ -334,15 +216,6 @@ ol > li:last-child > p {
   margin-bottom: 5rem;
 }
 
-/* Helpers */
-.action {
-  display: block;
-  margin: 1rem 0;
-}
-
-.bold {
-  font-weight: 600;
-}
 
 .italic {
   font-style:  italic;
@@ -352,9 +225,6 @@ ol > li:last-child > p {
   text-transform: lowercase;
 }
 
-.text--left{
-  text-align: left;
-}
 
 
 /*FOUNDATION OVERRIDES*/
@@ -364,28 +234,6 @@ ul {
 
 img {
   width: 100%;
-  margin-bottom: 1rem;
-}
-
-.button {
-  letter-spacing: .065rem;
-  text-transform: uppercase;
-}
-
-.button--black {
-  background-color:  hsla(0,0%,30%,.95);
-}
-
-.button--black:hover {
-  background-color:  hsla(0,0%,0%,.85);
-}
-
-.button--404 {
-  background-color:  hsla(0,0%,30%,.95);
-}
-
-.button--404:hover {
-  background-color:  hsla(0,0%,0%,.85);
 }
 
 // Small screens
@@ -457,17 +305,19 @@ img {
       font-size: .8rem;
     }
 
-    .work-item__context {
-      font-size: 1rem;
+    .portfolio__item__caption {
+      font-size: .65rem;
+      margin: 1rem 0;
     }
 
-    .work-item__title {
-      font-size: .85rem;
+    .portfolio__item__note {
+      padding: .25rem;
     }
 
-  .button--black {
-    display: none;
-  }
+    .portfolio__item__note--skills {
+      font-size: .4rem;
+      padding: .25rem;
+    }
 
   .social-media {
     padding: 1.25rem 0 0 0;
@@ -557,25 +407,19 @@ img {
       font-size: 1rem;
     }
 
+    .portfolio__item__caption {
+      font-size: 1rem;
+      margin: 1rem 0;
+    }
 
-  .portfolio__item--web {
-    margin: 2rem 0 4rem 0;
-    padding: 0;
-  }
+    .portfolio__item__note {
+      padding: .25rem;
+    }
 
-  .work-item__context {
-    font-size: 1.25rem;
-  }
-
-  .work-item__title {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  .button--black {
-    display: none;
-  }
-
+    .portfolio__item__note--skills {
+      font-size: .6rem;
+      padding: .25rem;
+    }
 
 .footer {
   margin-bottom: 2rem;
@@ -603,7 +447,6 @@ img {
 
 
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-
 
 // Medium screens
 @media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
@@ -642,30 +485,6 @@ img {
     width: 7.5rem;
   }
 
-
-  .portfolio__item--web {
-    margin: 2rem 0;
-    padding: 2rem 1rem;
-  }
-
-  .work-item__context {
-    font-size: 1.25rem;
-  }
-
-  .work-item__title {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  .button.small {
-    font-size: .65rem;
-    letter-spacing: .065rem;
-    text-transform: uppercase;
-  }
-
-
-
-
   .social-media {
     padding: 1.25rem 0 0 0;
   }
@@ -682,7 +501,6 @@ img {
   }
 
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-
 
 // Large screens
 @media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
