@@ -7,16 +7,16 @@ p {
   font-weight: 300;
 }
 
+ul, ol {
+  margin: 1.25rem 0;
+}
+
 ul > li > p, ol > li > p {
   margin-bottom: 0;
 }
 
 ul > li:last-child > p, ol > li:last-child > p {
   margin-bottom: 0;
-}
-
-ul, ol {
-  margin: 1.25rem 0;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
