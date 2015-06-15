@@ -468,6 +468,23 @@ img {
       font-size: .85rem;
     }
 
+    .work-page {
+      margin: 0;
+    }
+    .work-page__header {
+      margin-bottom: 1rem;
+    }
+    .work-page__context {
+      font-size: .85rem;
+    }
+    .work-page__title {
+      font-size: .85rem;
+    }
+
+    .work-page > p {
+      font-size: 1rem;
+    }
+
   .button--black {
     display: none;
   }
