@@ -389,8 +389,6 @@ img {
 }
 
 // Small screens
-@media only screen { } /* Define mobile styles */
-
 @media only screen and (max-width: 240px){
 
   .page__contents {
@@ -458,7 +456,7 @@ img {
     }
 
     .work-item__context {
-      font-size: 1rem;
+      font-size: .85rem;
     }
 
     .work-item__title {
