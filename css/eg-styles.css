@@ -488,6 +488,10 @@ img {
       font-size: .85rem;
     }
 
+    .work-page__subheading {
+      margin-top: 1rem;
+    }
+
   .button--black {
     display: none;
   }
