@@ -497,6 +497,10 @@ img {
       margin-top: 0;
     }
 
+    [class*="block-grid-"] > li {
+      padding: 0 0.625rem 0;
+    }
+
   .button--black {
     display: none;
   }
