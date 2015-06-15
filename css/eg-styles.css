@@ -492,6 +492,10 @@ img {
       font-size: 1.25rem;
       margin-top: 1rem;
     }
+    .work-page__subheading--small {
+      font-size: 1.15rem;
+      margin-top: 0;
+    }
 
   .button--black {
     display: none;
