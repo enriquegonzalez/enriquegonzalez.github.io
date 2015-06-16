@@ -1,0 +1,9 @@
+/* 404 PAGE */
+.page--404 {background: url('../images/bg-404.jpg');}
+.page__contents--404 {
+  background: hsla(360,100%,100%,.85);
+  border: 3px dotted hsla(0,0%,0%,.85);
+  padding: 2rem;
+}
+.button--404 {background-color:  hsla(0,0%,30%,.95);}
+.button--404:hover {background-color:  hsla(0,0%,0%,.85);}

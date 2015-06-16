@@ -36,18 +36,17 @@
   </script>
 
 </head>
-<body class="page">
+<body>
   <div class="contact-me right" ng-controller="ContactCtrl" ng-cloak>
-      {{email}}
+    {{email}}
   </div>
 
   <div class="page__contents">
-
     <div class="row">
       <div class="large-12 large-centered columns">
-        <header class="page__header">
-          <h1 class="title page__title">Hello, I’m Enrique</h1>
-          <p class="page__value-statement">I want to join a collaborative team that crafts meaningful stories, and provides great experiences. As an interaction designer and technologist&mdash;I can help conceptualize, create, refine, and reimagine products that empower, delight, and enhance their users.</p>
+        <header class="header--site">
+          <h1 class="title title--site">Hello, I’m Enrique</h1>
+          <p class="value-statement">I want to join a collaborative team that crafts meaningful stories, and provides great experiences. As an interaction designer and technologist&mdash;I can help conceptualize, create, refine, and reimagine products that empower, delight, and enhance their users.</p>
         </header>
       </div>
     </div>
@@ -55,11 +54,10 @@
     <div class="row">
       <div class="large-12 large-centered columns">
         <section class="portfolio" ng-controller="TabCtrl">
-          <header class="portfolio__header">
-            <h2 class="title portfolio__title">Portfolio</h2>
+          <header class="header--section text-center">
+            <h2 class="title title--section">Portfolio</h2>
           </header>
-
-          <ul class="portfolio__tabs">
+          <ul class="portfolio__tabs text-center">
             <li class="portfolio__tab">
               <a ui-sref="home" class="portfolio__tab__link" ng-class="{'portfolio__tab__link--active' : isSet(1)}" ng-click="setTab(1); setPageScroll(false)">
                 Work
@@ -71,11 +69,8 @@
               </a>
             </li>
           </ul>
-
-            <ui-view autoscroll='pageScroll' class="fade"></ui-view>
-
-          </section>
-
+          <ui-view autoscroll='pageScroll' class="fade"></ui-view>
+        </section>
       </div>
     </div>
 
@@ -110,8 +105,8 @@
         </footer>
       </div>
     </div>
-
   </div>
+
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-animate/angular-animate.min.js"></script>

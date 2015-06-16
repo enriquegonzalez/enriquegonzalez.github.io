@@ -1,44 +1,52 @@
-html, body {
-  height: 100%;
-  font-size: 16px;
-}
-
-p {
-  font-weight: 300;
-}
-
-/*ul, ol {
-  margin: 0 0 1.4rem 1.4rem;
-}
-
-ul > li > p, ol > li > p {
-  margin-bottom: 0;
-}
-
-ul > li:last-child > p, ol > li:last-child > p {
-  margin-bottom: 0;
-}
-*/
+/* ELEMENTS */
+html, body {height: 100%; font-size: 16px;}
+p {font-weight: 300; font-size: 1.25rem;}
+ul {margin-left: 0;}
+img {width: 100%;}
+/* ANGULAR */
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }
 
-.page__contents {
-  padding: 3rem;
 
+/* CONTAINER */
+.page__contents {padding: 3rem;}
+
+/* HEADERS */
+.header--section {margin: 3rem 0 2rem;}
+.subhead {
+  letter-spacing: .065rem;
+  margin:0;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+  .subhead--large {
+    border-top: 1px dotted hsla(0,0%,0%,.25);
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+  .subhead--medium {
+    font-family: 'Abril Fatface', Arial;
+    font-size: 1.65rem;
+    padding-top: 0;
+    margin: 2rem 0 0;
+    text-transform: capitalize;
+  }
+  .subhead--small {
+    font-size: 1.25rem;
+    padding-top: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+/* IMAGES */
+.title__image {
+  border: 1px solid hsla(0,0%,60%,.65);
+  box-shadow: 3px 6px 10px hsla(0,0%,30%,.5);
+  margin: 3rem 0 1rem;
 }
 
-.page--404 {
-  background: url('../images/bg-404.jpg');
-}
-
-.page__contents--404 {
-  background: hsla(360,100%,100%,.85);
-  border: 3px dotted hsla(0,0%,0%,.85);
-  padding: 2rem;
-}
-
-
+/* TITLES */
 .title {
   font-weight: 600;
   line-height: 1.5;
@@ -46,19 +54,48 @@ ul > li:last-child > p, ol > li:last-child > p {
   margin-bottom: 0;
   text-transform: uppercase;
 }
-
-  .page__header {
-    border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
-    padding: 3rem;
+  .title--image {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 1rem 0 .25rem;
+    text-align: center;
+  }
+  .title--section {
+    font-size: 1.65rem;
+    font-weight: 300;
+    letter-spacing: .385rem;
   }
 
-    .page__title {
-      font-family: 'Abril Fatface', Arial;
-      font-weight: 300;
-      text-transform: capitalize;
-    }
+/* LISTS */
+.items {
+  list-style: none;
+  margin-left: 0;
+}
+  .item {
+    padding: .65rem;
+  }
 
-  .page__title:first-letter {
+
+/* SITE HEADER */
+.contact-me {
+  background: hsla(0, 0%, 93%, .25);
+  display: inline-block;
+  font-size: .9rem;
+  font-weight: 300;
+  letter-spacing: .065rem;
+  padding: 1rem;
+  text-align: right;
+}
+.header--site {
+  border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
+  padding: 3rem;
+}
+.title--site {
+  font-family: 'Abril Fatface', Arial;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+  .title--site:first-letter {
     float: left;
     font-size: 7rem;
     line-height: 4rem;
@@ -66,209 +103,79 @@ ul > li:last-child > p, ol > li:last-child > p {
     padding-right: .5rem;
     padding-top: 1.33rem;
   }
-
-  .page__value-statement {
-    color: hsla(0, 0%, 0%, .65);
-    font-size: 1.65rem;
-    line-height: 1.65;
-  }
-
-  .contact-me {
-    background: hsla(0, 0%, 93%, .25);
-    display: inline-block;
-    font-size: .9rem;
-    font-weight: 300;
-    letter-spacing: .065rem;
-    padding: 1rem;
-    text-align: right;
-  }
-
-.items {
-  list-style: none;
-  margin-left: 0;
+.value-statement {
+  color: hsla(0, 0%, 0%, .65);
+  font-size: 1.65rem;
+  line-height: 1.65;
 }
 
-  .item {
-    padding: .65rem;
-  }
 
-    .item__title {
-      font-family: 'Abril Fatface', Arial;
-      text-transform: capitalize;
-    }
-
+/*PORTFOLIO SECTION*/
 .portfolio {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
-  padding: 4.25rem 3rem 3rem 3rem;
-  position: relative;
-  text-align: center;
+  padding: 3rem 1.5rem;
 }
-
-  .portfolio__header {
-    margin: 0 0 2rem 0;
-  }
-
-  .portfolio__title {
-    font-size: 1.65rem;
-    font-weight: 300;
-    letter-spacing: .385rem;
-  }
-
-  .portfolio__tabs {
-    list-style: none;
-    margin-bottom: 2rem;
-  }
-
-  .portfolio__tab {
-    display: inline-block;
-    margin: 0 2rem;
-  }
-
-  .portfolio__tab__link {
+/*PORTFOLIO TABS*/
+.portfolio__tabs {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.portfolio__tab {
+  display: inline-block;
+  margin: 0 2rem;
+}
+.portfolio__tab__link {
+  color: hsla(0, 0%, 0%, 1);
+  display: block;
+  font-size: 1.15rem;
+  letter-spacing:  .15rem;
+  padding: .5rem 2rem;
+  width: 12rem;
+  text-transform: uppercase;
+}
+  .portfolio__tab__link:link,
+  .portfolio__tab__link:visited,
+  .portfolio__tab__link:hover,
+  .portfolio__tab__link:active {
     color: hsla(0, 0%, 0%, 1);
-    display: block;
-    font-size: 1.15rem;
-    letter-spacing:  .15rem;
-    padding: .5rem 2rem;
-    width: 12rem;
-    text-transform: uppercase;
   }
-    .portfolio__tab__link:hover {
-      background: hsla(0, 0%, 93%, 1);
-      color: hsla(0, 0%, 0%, 1);
-    }
-
-    .portfolio__tab__link--active {
-      border-bottom: 3px solid hsla(0, 0%, 0%, 1);
-    }
-
-
-  .portfolio__tab__content{
-    opacity: 1;
+  .portfolio__tab__link:hover {
+    background: hsla(0, 0%, 93%, 1);
   }
-
-  .portfolio__item__image {
-    margin: 0 0 5rem 0;
-  }
-
-  .portfolio__item__title {
-    font-size: 2rem;
+  .portfolio__tab__link--active {
+    border-bottom: 3px solid hsla(0, 0%, 0%, 1);
     font-weight: 500;
   }
 
-  .portfolio__item__link {
-    color: hsla(0, 0%, 0%, 1);
-  }
 
-  .portfolio__item__description {
-    color: hsla(0, 0%, 0%, .65);
-    font-size: 1.65rem;
-    font-style: italic;
-    font-weight: 300;
-    line-height: 1.5;
-  }
-
-
-
-/* Portfolio Work Items */
-
-.portfolio__item--web {
-  margin: 2rem 0;
-  padding: 2rem 1rem;
-}
-
-.work-item__context {
-  font-family: 'Abril Fatface', Arial;
-  font-size: 1.65rem;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: .065rem;
-  margin-bottom: 0;
-  text-transform: capitalize;
-}
-
-.work-item__title {
-  color: hsla(0, 0%, 0%, .65);
-  font-size: 1.25rem;
-  font-style: italic;
-  font-weight: 300;
-  line-height: 1.5;
-}
-
-.work-page {
-  font-size: 1.25rem;
+/* PORTFOLIO WORK LIST */
+.item--work {
   margin: 3rem 0;
-  text-align: left;
 }
 
-.work-page > p, .work-page > ol li {
-  font-size: 1.25rem;
-  font-weight: 300;
-
-}
-
-.work-page__media {
-  font-size: 1.25rem;
-  margin: 0;
-  text-align: left;
-}
-
-.work-page__media > p, .work-page__media > ol li {
-  font-size: 1.25rem;
-  font-weight: 300;
-
-}
-
-
-
-.work-page__header {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.work-page__context {
+.title--work {
   font-family: 'Abril Fatface', Arial;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: .065rem;
-  margin-bottom: 0;
+  font-size: 1.85rem;
+  font-weight: 300;
   text-transform: capitalize;
 }
 
-.work-page__title {
+.work__description {
   color: hsla(0, 0%, 0%, .65);
-  font-size: 1.65rem;
+  font-size: 1.45rem;
   font-style: italic;
   font-weight: 300;
   line-height: 1.5;
+  padding: 0 2rem;
 }
 
-.work-page__subheading {
-  border-top: 1px dotted hsla(0,0%,0%,.25);
-  font-family: 'Abril Fatface', Arial;
-  font-size: 1.8rem;
-  letter-spacing: .065rem;
-  margin-top: 3rem;
-  padding-top: 1rem;
-  text-transform: uppercase;
-}
 
-.work-page__subheading--small {
-  border: none;
-  font-size: 1.25rem;
-  letter-spacing: .035rem;
-  margin-top: 0;
-}
+/* PORTFOLIO WORK ITEM PAGE */
 
-.work-page__subheading--xsmall {
-  border: none;
-  color: hsla(0,0%,25%,1);
-  font-size: 1.25rem;
-  letter-spacing: .065rem;
-  margin-top: 0;
-  text-transform: capitalize;
-}
+
+
+
+
 
 .subheading__note {
   background: hsla(0,0%,0%,1);
@@ -289,36 +196,46 @@ ul > li:last-child > p, ol > li:last-child > p {
   margin-top: 1.25rem;
 }
 
-.image__title {
-  font-size: .85rem;
-  letter-spacing: .065rem;
-  margin: .25rem 0;
-  padding: 0;
-  text-align: center;
-  text-transform: uppercase;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PORTFOLIO ARTICLES LIST */
+.title--article {
+  font-family: 'Abril Fatface', Arial;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: capitalize;
 }
+.article__link {
+  color: hsla(0, 0%, 0%, 1);
+}
+.article__description {
+    color: hsla(0, 0%, 0%, .65);
+    font-size: 1.65rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.5;
+  }
 
-
-/* Footer */
+/* FOOTER */
 .footer {
   text-align: center;
 }
-
 .social-media {
-  padding: 4.25rem 3rem 3rem 3rem;
+  padding: 3rem 1.5rem;
 }
-
-  .social-media__header {
-    margin: 0 0 2rem 0;
-  }
-
-  .social-media__title {
-    display: none;
-    font-size: 1.65rem;
-    font-weight: 600;
-    letter-spacing: .385rem;
-  }
-
   .social-media__item {
     border-radius: 5rem;
     display: inline-block;
@@ -338,59 +255,32 @@ ul > li:last-child > p, ol > li:last-child > p {
   margin-bottom: 5rem;
 }
 
-/* Helpers */
-.action {
-  display: block;
-  margin: 1rem 0;
-}
 
-.bold {
-  font-weight: 600;
-}
-
-.italic {
-  font-style:  italic;
-}
-
-.lowercase {
-  text-transform: lowercase;
-}
-
-.text--left{
-  text-align: left;
-}
-
-
-/*FOUNDATION OVERRIDES*/
-ul {
-  margin-left: 0;
-}
-
-img {
-  width: 100%;
-}
-
+/* BUTTONS */
 .button {
   letter-spacing: .065rem;
   text-transform: uppercase;
 }
+.button--black {background-color:  hsla(0,0%,30%,.95);}
+.button--black:hover {background-color:  hsla(0,0%,0%,.85);}
 
-.button--black {
-  background-color:  hsla(0,0%,30%,.95);
+/* HELPERS */
+.action {
+  display: block;
+  margin: 1rem 0;
 }
+.bold {font-weight: 600;}
+.text-center {text-align: center;}
+.italic {font-style:  italic;}
+.lowercase {text-transform: lowercase;}
+.no-space {margin-bottom: .25rem}
+.text--left{text-align: left;}
+.text--small{font-size: 1rem;}
 
-.button--black:hover {
-  background-color:  hsla(0,0%,0%,.85);
-}
 
-.button--404 {
-  background-color:  hsla(0,0%,30%,.95);
-}
 
-.button--404:hover {
-  background-color:  hsla(0,0%,0%,.85);
-}
 
+/* MEDIA QUERIES */
 // Small screens
 @media only screen { } /* Define mobile styles */
 
@@ -646,10 +536,6 @@ img {
       font-size: 1rem;
       margin-top: 0;
     }
-
-/*    [class*="block-grid-"] > li {
-      padding: 0 0.625rem 0;
-    }*/
 
   .button--black {
     display: none;
