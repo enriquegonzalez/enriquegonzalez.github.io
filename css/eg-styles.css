@@ -33,11 +33,20 @@ img {width: 100%;}
     text-transform: capitalize;
   }
   .subhead--small {
-    font-size: 1.25rem;
-    padding-top: 0;
-    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 1rem 0 .65rem;
+    text-align: center;
     text-transform: uppercase;
   }
+.subhead--banner {
+  background: hsla(0,0%,20%,1);
+  color: hsla(360,100%,100%,1);
+  font-size: .85rem;
+  letter-spacing: .065rem;
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+}
 
 /* IMAGES */
 .title__image {
@@ -168,47 +177,6 @@ img {width: 100%;}
   line-height: 1.5;
   padding: 0 2rem;
 }
-
-
-/* PORTFOLIO WORK ITEM PAGE */
-
-
-
-
-
-
-.subheading__note {
-  background: hsla(0,0%,0%,1);
-  color: hsla(360,100%,100%,1);
-  font-size: .85rem;
-  letter-spacing: .065rem;
-  padding: .25rem 1rem;
-  text-transform: uppercase;
-}
-
-.subheading__note--list:first-of-type {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-
-.subheading__note--list {
-  margin-bottom: 0;
-  margin-top: 1.25rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* PORTFOLIO ARTICLES LIST */
