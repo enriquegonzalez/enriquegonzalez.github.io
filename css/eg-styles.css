@@ -475,6 +475,10 @@ img {width: 100%;}
   /* GRID */
   .column, .columns {padding: 0 .4rem;}
 
+  [class*="block-grid-"] > li {
+    padding: 0 0.625rem;
+  }
+
 
   /* HELPERS */
   .line-break {display: block;}
