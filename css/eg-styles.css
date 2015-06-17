@@ -379,6 +379,8 @@ img {width: 100%;}
     padding: 1rem;
   }
 
+  /* LISTS */
+  .item {padding: 0;}
 
   /* SITE HEADER */
   .header--site {
