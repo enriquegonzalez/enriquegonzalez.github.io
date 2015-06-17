@@ -382,6 +382,19 @@ img {width: 100%;}
   /* LISTS */
   .item {padding: 0;}
 
+
+  /* HEADERS */
+  .header--section {margin: 2rem 0 1rem;}
+  .subhead {padding-top: .25rem;}
+    .subhead--xlarge {font-size: 1.85rem;}
+    .subhead--large {font-size: 1.65rem;}
+    .subhead--medium {
+      font-size: 1.45rem;
+      margin: 1rem 0 0;
+    }
+    .subhead--small {margin: .65rem 0 .25rem;}
+
+
   /* SITE HEADER */
   .header--site {
     border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
