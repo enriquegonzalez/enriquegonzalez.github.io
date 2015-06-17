@@ -3,6 +3,8 @@ html, body {height: 100%; font-size: 16px;}
 p {font-weight: 300; font-size: 1.25rem;}
 ul {margin-left: 0;}
 img {width: 100%;}
+
+
 /* ANGULAR */
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
@@ -11,6 +13,7 @@ img {width: 100%;}
 
 /* CONTAINER */
 .page__contents {padding: 3rem;}
+
 
 /* HEADERS */
 .header--section {margin: 3rem 0 2rem;}
@@ -48,6 +51,7 @@ img {width: 100%;}
   text-transform: uppercase;
 }
 
+
 /* IMAGES */
 .title__image {
   border: 1px solid hsla(0,0%,60%,.65);
@@ -57,6 +61,7 @@ img {width: 100%;}
 .artifact {
   margin-bottom: 1rem;
 }
+
 
 /* TITLES */
 .title {
@@ -77,6 +82,7 @@ img {width: 100%;}
     font-weight: 300;
     letter-spacing: .385rem;
   }
+
 
 /* LISTS */
 .items {
@@ -127,7 +133,7 @@ img {width: 100%;}
   border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
   padding: 3rem 1.5rem;
 }
-/*PORTFOLIO TABS*/
+
 .portfolio__tabs {
   list-style: none;
   margin-bottom: 2rem;
@@ -200,6 +206,7 @@ img {width: 100%;}
     line-height: 1.5;
   }
 
+
 /* FOOTER */
 .footer {
   text-align: center;
@@ -234,6 +241,7 @@ img {width: 100%;}
 }
 .button--black {background-color:  hsla(0,0%,30%,.95);}
 .button--black:hover {background-color:  hsla(0,0%,0%,.85);}
+
 
 /* HELPERS */
 .action {
@@ -512,35 +520,31 @@ img {width: 100%;}
     display: none;
   }
 
-
-.footer {
-  margin-bottom: 2rem;
-}
-  .social-media {
-    padding: 1.25rem 0 0 0;
+  /* FOOTER */
+  .footer {
+    margin-bottom: 2rem;
   }
-    .social-media__item {
-      border-radius: 4rem;
-      height: 3rem;
-      margin: 0 0 1rem 0;
-      padding: .25rem;
-      width: 3rem;
+    .social-media {
+      padding: 1.25rem 0 0 0;
+    }
+      .social-media__item {
+        border-radius: 4rem;
+        height: 3rem;
+        margin: 0 0 1rem 0;
+        padding: .25rem;
+        width: 3rem;
+      }
+
+    .copyright {
+      font-size: .65rem;
+      padding: 0;
+      margin: 1rem 0 0 0;
     }
 
-  .copyright {
-    font-size: .65rem;
-    padding: 0;
-    margin: 1rem 0 0 0;
-  }
-
+  /* HELPERS */
   .line-break {
     display: block;
   }
-
-  .invisible--small {
-    display: none;
-  }
-
 
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
@@ -550,14 +554,17 @@ img {width: 100%;}
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
+  /* CONTAINER */
   .page__contents {
     padding: 1rem;
   }
 
-  .page__title {
+
+  /* SITE HEADER */
+  .title--site {
     font-size: 2.25rem;
   }
-    .page__title:first-letter {
+    .title--site:first-letter {
         font-size: 5.5rem;
         line-height: 5.25rem;
         padding-left: .25rem;
@@ -565,16 +572,17 @@ img {width: 100%;}
         padding-top: 0;
       }
 
-  .page__value-statement {
+  .value-statement {
     font-size: 1.25rem;
     line-height: 1.5;
   }
 
+
+  /*PORTFOLIO SECTION*/
   .portfolio__tab {
     display: inline-block;
     margin: 1rem;
   }
-
   .portfolio__tab__link {
     font-size: 1rem;
     letter-spacing:  .1rem;
@@ -583,20 +591,7 @@ img {width: 100%;}
   }
 
 
-  .portfolio__item--web {
-    margin: 2rem 0;
-    padding: 2rem 1rem;
-  }
-
-  .work-item__context {
-    font-size: 1.25rem;
-  }
-
-  .work-item__title {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
+  /* BUTTONS */
   .button.small {
     font-size: .65rem;
     letter-spacing: .065rem;
@@ -604,8 +599,7 @@ img {width: 100%;}
   }
 
 
-
-
+  /* FOOTER */
   .social-media {
     padding: 1.25rem 0 0 0;
   }
@@ -617,22 +611,10 @@ img {width: 100%;}
       width: 4rem;
     }
 
-   .line-break {
+
+  /* HELPERS */
+ .line-break {
     display: block;
   }
 
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
-
-
-// Large screens
-@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
-
-@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
-
-// XLarge screens
-@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
-
-@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-
-// XXLarge screens
-@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
