@@ -423,10 +423,10 @@ img {width: 100%;}
     }
 
   /* PORTFOLIO WORK LIST */
-  .title--work {font-size: 1.5rem;}
+  .title--work {font-size: 1.25rem;}
 
   .work__description {
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 0;
   }
 
