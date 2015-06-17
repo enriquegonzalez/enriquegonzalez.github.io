@@ -493,6 +493,10 @@ img {width: 100%;}
   /* CONTAINER */
   .page__contents {padding: 1rem;}
 
+  /* HEADERS */
+    .subhead--xlarge {font-size: 1.85rem;}
+    .subhead--large {font-size: 1.65rem;}
+    .subhead--medium {font-size: 1.25rem;}
 
   /* SITE HEADER */
   .title--site {font-size: 2.25rem;}
