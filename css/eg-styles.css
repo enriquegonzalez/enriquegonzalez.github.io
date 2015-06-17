@@ -386,10 +386,10 @@ img {width: 100%;}
   /* HEADERS */
   .header--section {margin: 2rem 0 1rem;}
   .subhead {padding-top: .25rem;}
-    .subhead--xlarge {font-size: 1.85rem;}
-    .subhead--large {font-size: 1.65rem;}
+    .subhead--xlarge {font-size: 1.65rem;}
+    .subhead--large {font-size: 1.45rem;}
     .subhead--medium {
-      font-size: 1.45rem;
+      font-size: 1.25rem;
       margin: 1rem 0 0;
     }
     .subhead--small {margin: .65rem 0 .25rem;}
