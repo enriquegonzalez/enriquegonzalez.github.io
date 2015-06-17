@@ -422,6 +422,14 @@ img {width: 100%;}
       width: 4.5rem;
     }
 
+  /* PORTFOLIO WORK LIST */
+  .title--work {font-size: 1.5rem;}
+
+  .work__description {
+    font-size: 1.25rem;
+    padding: 0;
+  }
+
 
   /* FOOTER */
   .footer {margin-bottom: 2rem;}
