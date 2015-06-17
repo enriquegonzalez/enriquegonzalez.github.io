@@ -402,131 +402,62 @@ img {width: 100%;}
 
 @media only screen and (min-width: 241px) and (max-width: 40em) {
 
-  .column, .columns {
-    padding: 0 .4rem;
-  }
+  /* ELEMENTS */
+  p {font-size: 1rem;}
 
+
+  /* CONTAINER */
   .page__contents {
     padding: 1rem;
   }
 
-    .page__header {
-      border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
-      padding: 0;
-    }
 
-    .page__title {
-      font-size: 1.25rem;
-      letter-spacing: .025rem;
-      margin-top: 1rem;
-      text-transform: capitalize;
-    }
-      .page__title:first-letter {
-        font-size: 3.7rem;
-        line-height: 3.265rem;
-        padding-left: .25rem;
-        padding-right: .25rem;
-        padding-top: 0;
-      }
-
-    .page__value-statement {
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-
-  .portfolio {
-    padding: 1.25rem 0 0 0;
+  /* SITE HEADER */
+  .header--site {
+    border-bottom: 1px dotted hsla(0, 0%, 0%, 1);
+    padding: 0;
   }
-    .portfolio__header {
-      margin: 0 0 .25rem 0;
+
+  .title--site {
+    font-size: 1.25rem;
+    letter-spacing: .025rem;
+    margin-top: 1rem;
+    text-transform: capitalize;
+  }
+    .title--site:first-letter {
+      font-size: 3.7rem;
+      line-height: 3.265rem;
+      padding-left: .25rem;
+      padding-right: .25rem;
+      padding-top: 0;
     }
 
-    .portfolio__title {
-      font-size: 1rem;
-    }
+  .value-statement {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+
+  /*PORTFOLIO SECTION*/
+  .portfolio {padding: 1.25rem 0 0 0;}
+
+  .header--site {margin: 0 0 .25rem 0;}
 
   .portfolio__tab {
     display: inline-block;
     margin: .65rem .25rem;
   }
-
-  .portfolio__tab__link {
-    font-size: .65rem;
-    letter-spacing:  .085rem;
-    padding: .25rem;
-    width: 4.5rem;
-  }
-
-    .portfolio__item {
-      padding: .25rem 0;
+    .portfolio__tab__link {
+      font-size: .65rem;
+      letter-spacing:  .085rem;
+      padding: .25rem;
+      width: 4.5rem;
     }
 
-    .portfolio__item__title {
-      font-size: 1rem;
-    }
-
-    .portfolio__item__description {
-      font-size: 1rem;
-    }
-
-
-  .portfolio__item--web {
-    margin: 2rem 0 4rem 0;
-    padding: 0;
-  }
-
-  .work-item__context {
-    font-size: 1.25rem;
-  }
-
-  .work-item__title {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-
-  .work-page {
-      margin: 0;
-    }
-    .work-page__header {
-      margin-bottom: 1rem;
-    }
-    .work-page__context {
-      font-size: 2rem;
-    }
-    .work-page__title {
-      font-size: 1rem;
-    }
-
-    p {
-      font-size: 1rem;
-    }
-    .work-page > p {
-      font-size: 1rem;
-    }
-    .work-page__media > p {
-      font-size: 1rem;
-    }
-
-    .work-page__subheading {
-      font-size: 1.5rem;
-      margin-top: 1rem;
-    }
-    .work-page__subheading--small {
-      font-size: 1rem;
-      margin-top: 0;
-    }
-
-  .button--black {
-    display: none;
-  }
 
   /* FOOTER */
-  .footer {
-    margin-bottom: 2rem;
-  }
-    .social-media {
-      padding: 1.25rem 0 0 0;
-    }
+  .footer {margin-bottom: 2rem;}
+    .social-media {padding: 1.25rem 0 0 0;}
       .social-media__item {
         border-radius: 4rem;
         height: 3rem;
@@ -541,29 +472,30 @@ img {width: 100%;}
       margin: 1rem 0 0 0;
     }
 
+
+  /* BUTTONS */
+  .button--black {display: none;}
+
+
+  /* GRID */
+  .column, .columns {padding: 0 .4rem;}
+
+
   /* HELPERS */
-  .line-break {
-    display: block;
-  }
+  .line-break {display: block;}
 
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 
 // Medium screens
-@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
-
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 
   /* CONTAINER */
-  .page__contents {
-    padding: 1rem;
-  }
+  .page__contents {padding: 1rem;}
 
 
   /* SITE HEADER */
-  .title--site {
-    font-size: 2.25rem;
-  }
+  .title--site {font-size: 2.25rem;}
     .title--site:first-letter {
         font-size: 5.5rem;
         line-height: 5.25rem;
@@ -591,18 +523,8 @@ img {width: 100%;}
   }
 
 
-  /* BUTTONS */
-  .button.small {
-    font-size: .65rem;
-    letter-spacing: .065rem;
-    text-transform: uppercase;
-  }
-
-
   /* FOOTER */
-  .social-media {
-    padding: 1.25rem 0 0 0;
-  }
+  .social-media {padding: 1.25rem 0 0 0;}
     .social-media__item {
       border-radius: 5rem;
       height: 4rem;
@@ -612,9 +534,15 @@ img {width: 100%;}
     }
 
 
-  /* HELPERS */
- .line-break {
-    display: block;
+  /* BUTTONS */
+  .button.small {
+    font-size: .65rem;
+    letter-spacing: .065rem;
+    text-transform: uppercase;
   }
+
+
+  /* HELPERS */
+ .line-break {display: block;}
 
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
